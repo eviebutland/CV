@@ -1,0 +1,54 @@
+@import "../../assets/scss/main";
+
+.container {
+  .button_container {
+    display: flex;
+    justify-content: flex-end;
+
+    .menu_button {
+      border: none;
+      background-color: transparent;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  nav {
+    &.hide {
+      display: none;
+    }
+    &.display {
+      width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex !important;
+      justify-content: flex-end;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+
+        @media screen and (min-width: 768px) {
+          display: inline-block;
+        }
+
+        a {
+          padding: 0 $standard-spacing-horizontal;
+          text-decoration: none;
+          color: $copy;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    img {
+      display: none;
+    }
+  }
+}
