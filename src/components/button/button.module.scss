@@ -1,0 +1,16 @@
+@import "../../assets/scss/main.scss";
+
+.button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  min-width: 100px;
+
+  &.full {
+    background-color: $primary;
+  }
+  &.outline {
+    border: 1px solid $primary;
+    background-color: transparent;
+  }
+}

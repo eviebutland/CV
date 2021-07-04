@@ -1,5 +1,28 @@
 .container {
-  display: flex;
+  border-radius: 16px;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  // box-shadow: 0 8px 32px 0;
+
+  h2 {
+    text-align: center;
+
+    .break {
+      display: none;
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+    .span {
+      display: inline-block;
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
   .date_container {
     font-size: 40px;
     padding-right: 20px;

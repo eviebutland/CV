@@ -1,5 +1,8 @@
 .container {
-  padding: 10px;
+  border-radius: 16px;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  // box-shadow: 0 8px 32px 0 rgb(42, 59, 89);
+  // padding: 26px 36px 44px;
 
   @media screen and (min-width: 768px) {
     padding: 30px;

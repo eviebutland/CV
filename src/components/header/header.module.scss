@@ -4,15 +4,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0;
-  background-image: url("../../assets/glow.png");
-  background-repeat: no-repeat;
 
   .button_container {
     display: flex;
 
     button {
       margin: 0 $standard-spacing-horizontal;
+    }
+  }
+  h1,
+  h2 {
+    margin: 0;
+    text-align: center;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+  img {
+    max-width: 200px;
+    @media (min-width: 1440px) {
     }
   }
 }

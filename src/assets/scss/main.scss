@@ -2,10 +2,50 @@
 
 body {
   font-family: $font-family;
-  background: linear-gradient(
-      217deg,
-      rgba(255, 0, 0, 0.8),
-      rgba(255, 0, 0, 0) 70.71%
-    ),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(255, 0, 242, 0) 70.71%);
+  // background: linear-gradient(145deg, #3434ff, #b438ae 70.71%);
+  padding: 20px;
+}
+
+.root {
+  background-image: url("../../assets/glow.png");
+  background-position: center;
+}
+
+p,
+a {
+  font-size: $p-mobile-font-size;
+  @media (min-width: 1440px) {
+    font-size: $p-desktop-font-size;
+  }
+}
+
+h1 {
+  font-size: $h1-mobile-font-size;
+  @media (min-width: 768px) {
+    font-size: $h1-tablet-font-size;
+  }
+  @media (min-width: 1440px) {
+    font-size: $h1-desktop-large-font-size;
+  }
+}
+
+h2 {
+  font-size: $h2-mobile-font-size;
+  @media (min-width: 768px) {
+    font-size: $h2-tablet-font-size;
+  }
+  @media (min-width: 1440px) {
+    font-size: $h2-desktop-large-font-size;
+  }
+}
+
+h3,
+.lead {
+  font-size: $h3-mobile-font-size;
+  @media (min-width: 768px) {
+    font-size: $h3-tablet-font-size;
+  }
+  @media (min-width: 1440px) {
+    font-size: $h3-desktop-large-font-size;
+  }
 }
