@@ -1,15 +1,21 @@
 import styles from './navigation.module.scss'
 import menuIcon from '../../assets/svg/bars-solid.svg'
 import closeIcon from '../../assets/svg/times-solid.svg'
-
+import cs from 'classnames'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export const Navigation = () => {
   const [ isDisplayingMenu, setIsDisplayingMenu ] = useState(false)
   return (
-    <header className={styles.container}>
+    <header className={cs(styles.container, isDisplayingMenu && styles.displayContainer)}>
       <div className={styles.button_container}>
-        <button onClick={() => setIsDisplayingMenu(!isDisplayingMenu)} className={styles.menu_button}>
+        <button 
+          onClick={() => 
+            setIsDisplayingMenu(!isDisplayingMenu)
+          } 
+          className={styles.menu_button}
+        >
           {isDisplayingMenu ? (
             <img src={closeIcon} alt="close menu"/>
           ) : (
@@ -23,10 +29,10 @@ export const Navigation = () => {
             <a href="#hobbiesAndInterests">Hobbies and interests</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <Link to="#projects">Projects</Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link to="#contact">Contact</Link>
           </li>
         </ul>
       </nav>

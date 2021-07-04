@@ -29,7 +29,7 @@ export const Header = () => {
           style="full"
           />
         <Button 
-          text="About me" 
+          text="Projects" 
           onClick={() => console.log('go to section')}
           style="outline"
           />

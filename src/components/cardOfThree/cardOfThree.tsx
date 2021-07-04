@@ -3,7 +3,7 @@ import styles from './cardOfThree.module.scss'
 
 export const CardOfThree = () => {
   return (
-    <section id="#projects" className={styles.container}>
+    <section id="projects" className={styles.container}>
       <h2 className={styles.title}>Projects</h2>
       <ul>
         <li>

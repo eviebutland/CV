@@ -7,10 +7,23 @@
   min-width: 100px;
 
   &.full {
+    border: 1px solid $primary;
     background-color: $primary;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $copy;
+    }
   }
   &.outline {
     border: 1px solid $primary;
     background-color: transparent;
+    color: $copy;
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
   }
 }
