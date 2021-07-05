@@ -10,7 +10,7 @@ export const Footer = () => {
           <a href="mailto:evie.butland@gmail.com">Email</a>
         </li>
         <li>
-          <a href="tel:07720764111">Give me a call</a>
+          <a href="tel:07720764111">Call</a>
         </li>
         <li>
           <Link to="https://www.linkedin.com/in/evie-butland-432a33170">

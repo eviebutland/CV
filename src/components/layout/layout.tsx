@@ -3,19 +3,27 @@ import { Home } from "../../pages/home/home"
 import { Navigation } from "../navigation/navigation"
 import styles from './layout.module.scss'
 import { NotFound } from "../../pages/404/notFound";
+import { OrangeDriverTraining } from "../../pages/projects/orangeDriverTraining/orangeDriverTraining";
+import { HrMentorApp } from "../../pages/projects/hrMentorApp/hrMentorApp";
 
 export const Layout = () => {
   return (
-    <main className={styles.container}>
-      <Router>
-        <Navigation />
-        <Switch>
-          <Route exact path="/">
-            <Home/>
-          </Route>
-          <Route component={NotFound}></Route>
-        </Switch>
-      </Router>
-    </main>
+    <Router>
+      <Navigation />
+      <main className={styles.container}>
+      <Switch>
+        <Route exact path="/">
+          <Home/>
+        </Route>
+        <Route exact path="/orange-driver-training">
+          <OrangeDriverTraining/>
+        </Route>
+        <Route exact path="/hr-mentor-app">
+          <HrMentorApp/>
+        </Route>
+        <Route component={NotFound}></Route>
+      </Switch>
+      </main>
+    </Router>
   )
 }

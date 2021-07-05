@@ -3,7 +3,6 @@ import menuIcon from '../../assets/svg/bars-solid.svg'
 import closeIcon from '../../assets/svg/times-solid.svg'
 import cs from 'classnames'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 
 export const Navigation = () => {
   const [ isDisplayingMenu, setIsDisplayingMenu ] = useState(false)
@@ -26,13 +25,13 @@ export const Navigation = () => {
       <nav className={isDisplayingMenu ? styles.display : styles.hide}>
         <ul>
           <li>
-            <a href="#hobbiesAndInterests">Hobbies and interests</a>
+            <a href="http://localhost:3001/#hobbies-interests">Hobbies and interests</a>
           </li>
           <li>
-            <Link to="#projects">Projects</Link>
+            <a href="http://localhost:3001/#projects">Projects</a>
           </li>
           <li>
-            <Link to="#contact">Contact</Link>
+            <a href="http://localhost:3001/#working-experience">Working Experience</a>
           </li>
         </ul>
       </nav>

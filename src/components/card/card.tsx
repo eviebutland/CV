@@ -19,7 +19,13 @@ interface CardProps {
 export const Card = (props: CardProps) => {
   const { title, image, altText, content, imagePosition, type, id, glassmorphic} = props
   return (
-    <div className={cs(styles.container, imagePosition ? 'left' : 'right', glassmorphic && styles.glassmorphic, type === 'Project' && styles.project )} id={id}>
+    <div 
+      className={cs(
+        styles.container, 
+        imagePosition === "Left" ? styles.left : styles.right, 
+        glassmorphic && styles.glassmorphic,
+        type === 'Project' && styles.project 
+      )} id={id}>
       {type === 'Project' ? (
         <Fragment>
           <img src={image} alt={altText}/>

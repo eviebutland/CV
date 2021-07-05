@@ -2,7 +2,7 @@
 
 .footer {
   display: flex;
-  border-top: 1px solid $copy;
+  border-top: 1px solid $copy-light;
   padding: 10px;
 
   @media screen and (min-width: 768px) {
@@ -30,6 +30,13 @@
 
       @media screen and (min-width: 768px) {
         padding: 0 10px;
+      }
+      a {
+        color: $copy;
+        text-decoration: none;
+        &:hover {
+          border-bottom: 1px solid $copy-light;
+        }
       }
       img {
         width: 20px;

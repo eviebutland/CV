@@ -1,4 +1,11 @@
 .content {
   max-width: 1200px;
   margin: 0 auto;
+
+  .cards {
+    margin-top: 20px;
+    @media (min-width: 768px) {
+      margin: 100px 0;
+    }
+  }
 }

@@ -9,11 +9,11 @@ export const Timeline = () => {
           <span className={styles.span}>-</span>
           {new Date().getFullYear()}</h2>
       </div>
-      <div>
-        <p>Bit of text here about me but not a lot. Bit of text here about me but not a lot Bit of text here about me but not a lot. Bit of text here about me but not a lot. Bit of text here about me but not a lot. Bit of text here about me but not a lot. Bit of text here about me but not a lot. Bit of text here about me but not a lot</p>
-        <p>Bit of text here about me but not a lot. Bit of text here about me but not a lot Bit of text here about me but not a lot. Bit of text here about me but not a lot. Bit of text here about me but not a lot. Bit of text here about me but not a lot. Bit of text here about me but not a lot. Bit of text here about me but not a lot</p>
-        <p>Bit of text here about me but not a lot. Bit of text here about me but not a lot Bit of text here about me but not a lot. Bit of text here about me but not a lot. Bit of text here about me but not a lot. Bit of text here about me but not a lot. Bit of text here about me but not a lot. Bit of text here about me but not a lot</p>
-        <p>Bit of text here about me but not a lot. Bit of text here about me but not a lot Bit of text here about me but not a lot. Bit of text here about me but not a lot. Bit of text here about me but not a lot. Bit of text here about me but not a lot. Bit of text here about me but not a lot. Bit of text here about me but not a lot</p>
+      <div className={styles.content}>
+        <p>Since 2018, Evie has been building her skills in her free time as well as working full time as a developer at a health insurance company.</p>
+        <p>In 2019, Evie started an apprenticeship with FireBrand, recieving a Level 4 Software Developer accreditation.</p>
+        <p>With 3 years of experience, Evie has a passion for creating a product that exceeds the clients requirements with focus on accessibility.</p>
+        <p>She is currently working on a freelance project to re-design a driving instructor's website and learning React Native in her free time.</p>
       </div>
     </div>
   )

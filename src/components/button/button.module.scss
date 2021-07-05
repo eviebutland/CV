@@ -5,6 +5,9 @@
   border-radius: 10px;
   border: 1px solid transparent;
   min-width: 100px;
+  text-decoration: none;
+  margin: 0 10px;
+  text-align: center;
 
   &.full {
     border: 1px solid $primary;
