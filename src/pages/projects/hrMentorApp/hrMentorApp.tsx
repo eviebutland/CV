@@ -1,8 +1,8 @@
 import { Subheader } from "../../../components/subheader/subheader"
-import { List } from "../../../components/list/list"
 import { Colours } from "../../../components/colours/colours"
 import { Card } from "../../../components/card/card"
 import { Back } from "../../../components/back/back"
+import { Footer } from "../../../components/footer/footer"
 
 export const HrMentorApp = () => {
   return (
@@ -12,12 +12,6 @@ export const HrMentorApp = () => {
         title="HR Mentor App" 
         tags={['Responsive design', 'Front end development', 'Express JS', 'Accessibility', 'React', 'MongoDB']}>
         <p>This is the detail about the title</p></Subheader>
-      <hr aria-hidden="true"/>
-      <List 
-        title="Brief" 
-        tags={['Clean', 'Professional', 'Inline with company brand']} 
-        useHash={false}></List>
-      <hr aria-hidden="true"/>
       <Colours colours={['white', 'red']}/>
       <Card 
         title="Home page" 
@@ -67,6 +61,7 @@ export const HrMentorApp = () => {
         type="Card"
         glassmorphic={false}
         content="This is the 404 page..."></Card>
+        <Footer></Footer>
     </main>
   )
 }

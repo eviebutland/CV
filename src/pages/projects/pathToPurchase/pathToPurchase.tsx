@@ -1,8 +1,8 @@
 import { Subheader } from "../../../components/subheader/subheader"
-import { List } from "../../../components/list/list"
 import { Colours } from "../../../components/colours/colours"
 import { Card } from "../../../components/card/card"
 import { Back } from "../../../components/back/back"
+import { Footer } from "../../../components/footer/footer"
 
 export const PathToPurchase = () => {
   return (
@@ -13,12 +13,6 @@ export const PathToPurchase = () => {
         tags={['Responsive design', 'Front end development', 'API', 'Accessibility', 'React', 'SEO focus']}>
         This is the detail about the title
       </Subheader>
-      <hr aria-hidden="true"/>
-      <List 
-        title="Brief" 
-        tags={['Clean', 'Professional', 'Inline with company branding']} 
-        useHash={false}></List>
-      <hr aria-hidden="true"/>
       <Colours colours={['white', 'red']}/>
       <Card 
         title="Step one: Levels" 
@@ -60,6 +54,7 @@ export const PathToPurchase = () => {
         type="Card"
         glassmorphic={false}
         content="This is the Contact us page..."></Card>
+        <Footer></Footer>
     </main>
   )
 }

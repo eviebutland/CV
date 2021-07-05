@@ -1,4 +1,4 @@
-import { Fragment } from "react"
+import styles from "./list.module.scss"
 
 interface ListProps {
   title: string
@@ -9,13 +9,20 @@ interface ListProps {
 export const List = (props: ListProps) => {
   const { title, tags, useHash } = props
   return (
-    <Fragment>
-      <h2>{title}</h2>
-      {tags.map((item, key) => <p key={key}>
-        {useHash && (
-          <span>#</span>
-        )}
-        {item}</p>)}
-    </Fragment>
+    <section className={styles.container}>
+      <div className={styles.title_container}>
+        <h2 className={styles.title}>{title}</h2>
+      </div>
+      <ul>
+        {tags.map((item, key) => <li key={key}>
+          <p>
+            {useHash && (
+              <span>#</span>
+            )}
+            {item}
+          </p>
+        </li>)}
+      </ul>
+    </section>
   )
 }

@@ -1,0 +1,15 @@
+@import "../../assets/scss/main.scss";
+
+.container {
+  a {
+    display: flex;
+    align-content: center;
+    text-decoration: none;
+    color: $copy;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

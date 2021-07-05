@@ -24,11 +24,18 @@
       .company {
         max-width: 250px;
         width: 100%;
-        border-right: 1px solid $copy-light;
         margin: 20px 0;
+        flex: 1;
       }
       .role {
+        border-left: 1px solid $copy-light;
         padding-left: 20px;
+        flex: 1;
+        margin: 20px 0;
+
+        li {
+          border-bottom: none;
+        }
       }
     }
   }

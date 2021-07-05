@@ -1,5 +1,6 @@
 import { ReactChild } from "react"
 import { List } from "../list/list"
+import styles from "./subheader.module.scss"
 
 interface SubheaderProps {
   title: string
@@ -10,9 +11,9 @@ interface SubheaderProps {
 export const Subheader = (props: SubheaderProps) => {
   const { title, children, tags } = props
   return (
-    <section>
-      <h1>{title}</h1>
-      <p>{children}</p>
+    <section className={styles.container}>
+      <h1 className={styles.title}>{title}</h1>
+      <p className={styles.content}>{children}</p>
       <List title="What i've done" tags={tags} useHash={true}></List>
     </section>
   )
