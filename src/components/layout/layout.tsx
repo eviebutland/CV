@@ -5,6 +5,7 @@ import styles from './layout.module.scss'
 import { NotFound } from "../../pages/404/notFound";
 import { OrangeDriverTraining } from "../../pages/projects/orangeDriverTraining/orangeDriverTraining";
 import { HrMentorApp } from "../../pages/projects/hrMentorApp/hrMentorApp";
+import { PathToPurchase } from "../../pages/projects/pathToPurchase/pathToPurchase";
 
 export const Layout = () => {
   return (
@@ -20,6 +21,9 @@ export const Layout = () => {
         </Route>
         <Route exact path="/hr-mentor-app">
           <HrMentorApp/>
+        </Route>
+        <Route exact path="/path-to-purchase">
+          <PathToPurchase/>
         </Route>
         <Route component={NotFound}></Route>
       </Switch>

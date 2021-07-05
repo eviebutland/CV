@@ -30,13 +30,13 @@ export const CardOfThree = () => {
         </li>
         <li>
         <Card 
-            title="Orange driver training" 
+            title="Path to Purchase" 
             image={orangeThumnail} 
             altText="Orange driver training" 
-            content="Orange driver training is a driving instructor website going through a redesign. Built in Next.js, using SCSS modules. Tracey, the owner, was looking for a fresh design that would make her website look professional, clean, easy to navigate and stand out from the rest." 
+            content="This was a React app built within my current company, i worked in a team with 2 senior developers" 
             type="Project"
             glassmorphic={false}></Card>
-            <Button text="Orange driver training" onClick={() => console.log('go to new page')} style="full" location="/orange-driver-training"></Button>
+            <Button text="Path to Purchase" onClick={() => console.log('go to new page')} style="full" location="/path-to-purchase"></Button>
         </li>
       </ul>
     </section>

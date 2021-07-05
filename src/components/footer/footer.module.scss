@@ -3,8 +3,8 @@
 .footer {
   display: flex;
   border-top: 1px solid $copy-light;
-  padding: 10px;
-
+  padding-top: 10px;
+  flex-direction: column;
   @media screen and (min-width: 768px) {
     justify-content: flex-end;
   }
@@ -20,7 +20,6 @@
     width: 100%;
 
     @media screen and (min-width: 768px) {
-      width: 50%;
       justify-content: flex-end;
     }
 
@@ -41,6 +40,14 @@
       img {
         width: 20px;
         height: 20px;
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    p {
+      @media screen and (min-width: 768px) {
+        margin: 0;
       }
     }
   }

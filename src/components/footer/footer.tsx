@@ -18,6 +18,9 @@ export const Footer = () => {
           </Link>
         </li>
       </ul>
+      <div className={styles.copyright}>
+        <p>&copy; Evie Perren {new Date().getFullYear()}</p>
+      </div>
     </footer>
   )
 }

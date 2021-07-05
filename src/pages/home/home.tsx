@@ -35,8 +35,8 @@ export const Home = () => {
             glassmorphic={false}/>
         </section>
         <CardOfThree></CardOfThree>
-        <WorkingExperience></WorkingExperience>
         <Timeline/>
+        <WorkingExperience></WorkingExperience>
       </section>
       <Footer/>
     </Fragment>
