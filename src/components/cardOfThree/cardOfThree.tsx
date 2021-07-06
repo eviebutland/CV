@@ -9,7 +9,7 @@ export const CardOfThree = () => {
       <h2 className={styles.title}>Projects</h2>
       <ul>
         <li>
-          <div>
+          <div className={styles.item}>
             <Card 
               title="Orange driver training" 
               image={orangeThumnail} 
@@ -21,7 +21,7 @@ export const CardOfThree = () => {
           </div>
         </li>
         <li>
-          <div>
+          <div className={styles.item}>
             <Card 
               title="HR Mentor App" 
               image={orangeThumnail} 
@@ -33,7 +33,7 @@ export const CardOfThree = () => {
           </div>
         </li>
         <li>
-          <div>
+          <div className={styles.item}>
             <Card 
               title="Path to Purchase" 
               image={orangeThumnail} 

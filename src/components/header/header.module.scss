@@ -7,6 +7,7 @@
 
   .button_container {
     display: flex;
+    margin-top: $double-spacing-vertical;
 
     button {
       margin: 0 $standard-spacing-horizontal;
