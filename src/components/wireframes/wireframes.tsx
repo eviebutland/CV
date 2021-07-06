@@ -2,7 +2,7 @@ import styles from "./wireframes.module.scss"
 
 interface imageArrayProps {
   image: string,
-  alt: string
+  alt: string,
 }
 interface WireframeProps {
   title: string,
