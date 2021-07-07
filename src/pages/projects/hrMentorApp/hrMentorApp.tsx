@@ -1,67 +1,40 @@
 import { Subheader } from "../../../components/subheader/subheader"
 import { Colours } from "../../../components/colours/colours"
-import { Card } from "../../../components/card/card"
 import { Back } from "../../../components/back/back"
 import { Footer } from "../../../components/footer/footer"
+import { Wireframes } from "../../../components/wireframes/wireframes"
+import home from "../../../assets/images/mentor-home.png"
+import resources from "../../../assets/images/mentor-resources.png"
+import register from "../../../assets/images/mentor-register.png"
+import search from "../../../assets/images/mentor-search.png"
+import swaggerAPIDoc from "../../../assets/images/swagger-api-doc.png"
+import styles from "./hrMentorApp.module.scss"
 
 export const HrMentorApp = () => {
+  const imageArray = [
+    {image: home, alt: "Mentor app home page"},
+    {image: register, alt: "Mentor app register page"},
+    {image: resources, alt: "Mentor app resources page"},
+    {image: search, alt: "Mentor search page"}
+  ]
   return (
     <main>
       <Back/>
       <Subheader 
         title="HR Mentor App" 
-        tags={['Responsive design', 'Front end development', 'Express JS', 'Accessibility', 'React', 'MongoDB']}>
-        <p>This is the detail about the title</p></Subheader>
-      <Colours colours={['white', 'red']}/>
-      <Card 
-        title="Home page" 
-        imagePosition="Left" 
-        image=""
-        altText="Home page"
-        type="Card"
-        glassmorphic={false}
-        content="This is the home page..."></Card>
-      <Card 
-        title="Driving instructor course page" 
-        imagePosition="Right" 
-        image=""
-        altText="Home page"
-        type="Card"
-        glassmorphic={false}
-        content="This is the Driving instructor course page..."></Card>
-      <Card 
-        title="Mobile app page" 
-        imagePosition="Left" 
-        image=""
-        altText="Home page"
-        type="Card"
-        glassmorphic={false}
-        content="This is the mobile app page..."></Card>
-      <Card 
-        title="FAQ page" 
-        imagePosition="Right" 
-        image=""
-        altText="Home page"
-        type="Card"
-        glassmorphic={false}
-        content="This is the FAQ page..."></Card>
-      <Card 
-        title="Contact us page" 
-        imagePosition="Left" 
-        image=""
-        altText="Home page"
-        type="Card"
-        glassmorphic={false}
-        content="This is the Contact us page..."></Card>
-      <Card 
-        title="404 page" 
-        imagePosition="Right" 
-        image=""
-        altText="Home page"
-        type="Card"
-        glassmorphic={false}
-        content="This is the 404 page..."></Card>
-        <Footer></Footer>
+        tags={['Responsive design', 'Front end development', 'Express JS', 'Accessibility', 'React', 'MongoDB', 'Stakeholder management', 'Working to expectations']}>
+        <p>The HR mentor app is an internal system used by staff at Simplyhealth. The system allows staff to register to become a mentor, find a mentor as well as learn more about being a 'mentee' and a mentor. As a part of my apprenticeship, myself and two other apprentice developers gathered requirements from stakeholders within the business, collated the information to build a wireframe and converted this into working code.</p></Subheader>
+      <Colours colours={['#00cea4', '#99EBDA', '#2d13b6', '#5742C5', '#F2F4F8', '#0d2835']}/>
+      <Wireframes imageArray={imageArray} title="Live site">
+        <p>detail on site</p>
+      </Wireframes>
+      <section className={styles.card}>
+        <h2>API</h2>
+        <img src={swaggerAPIDoc} alt="swagger api documentation"/>
+        <p>detail on api</p>
+
+      </section>
+      <Footer></Footer>
     </main>
   )
 }

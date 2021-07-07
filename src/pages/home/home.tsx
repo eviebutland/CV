@@ -5,7 +5,9 @@ import { Timeline } from "../../components/timeline/timeline"
 import { Card } from "../../components/card/card"
 import { Footer } from "../../components/footer/footer"
 import bitemoji from "../../assets/images/about-me-bitemoji.png"
+import bitemojiTwo from "../../assets/images/about-me-two.png"
 import bitemojiHobbies from "../../assets/images/hobbies.png"
+import biteemojiHobbiesTwo from "../../assets/images/working-bitemoji.png"
 import styles from "./home.module.scss"
 import { WorkingExperience } from "../../components/workingExperience/workingExperience"
 
@@ -23,7 +25,7 @@ export const Home = () => {
             type="Card" 
             imagePosition="Left"
             id="aboutMe"
-            glassmorphic={false}/>
+            imageOnHover={bitemojiTwo}/>
           <Card 
             title="My hobbies and interests" 
             image={bitemojiHobbies} 
@@ -32,7 +34,7 @@ export const Home = () => {
             type="Card" 
             imagePosition="Right" 
             id="hobbies-interests"
-            glassmorphic={false}/>
+            imageOnHover={biteemojiHobbiesTwo}/>
         </section>
         <CardOfThree></CardOfThree>
         <Timeline/>

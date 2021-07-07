@@ -14,9 +14,16 @@
 
     li {
       list-style: none;
-      display: flex;
-      border-bottom: 1px solid $copy-light;
       align-items: baseline;
+      border-bottom: 1px solid $copy-light;
+
+      @media (min-width: 1024px) {
+        padding: 0 20px;
+        display: flex;
+      }
+      &:hover {
+        box-shadow: $box-shadow;
+      }
 
       &:last-of-type {
         border-bottom: none;
@@ -28,13 +35,19 @@
         flex: 1;
       }
       .role {
-        border-left: 1px solid $copy-light;
-        padding-left: 20px;
         flex: 1;
         margin: 20px 0;
 
+        @media (min-width: 1024px) {
+          padding-left: 20px;
+          border-left: 1px solid $copy-light;
+        }
+
         li {
           border-bottom: none;
+          &:hover {
+            box-shadow: none !important;
+          }
         }
       }
     }

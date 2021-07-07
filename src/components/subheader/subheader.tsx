@@ -1,4 +1,4 @@
-import { ReactChildren, ReactChild } from "react"
+import { ReactChild } from "react"
 import { List } from "../list/list"
 import styles from "./subheader.module.scss"
 

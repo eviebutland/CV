@@ -43,14 +43,14 @@ export const OrangeDriverTraining = () => {
         tags={['Responsive design', 'Front end development', 'CMS integration', 'Accessibility', 'Next JS', 'Prismic', 'Figma', 'SCSS Modules',]}>
         <p>Orange Driver Training is a driving instructor's website. Tracey, the owner wanted a new fresh design to represent her company. She wanted a design that was modern, fun, uplifting, informative, professional. The website was already built in NextJS, connecting to the Headless CMS <a href="https://prismic.io/">Prismic </a>. In order to fulfil the new seamless look and feel of her website, new components were created using Prismic API, NextJS and SCSS modules.</p>
       </Subheader>
-      <Wireframes title="Before" imageArray={beforeImages}></Wireframes>
+      <Wireframes title="Before redesign" imageArray={beforeImages}></Wireframes>
       <div className={styles.card}>
         <h3>Dicussion with stakeholder</h3>
         <p>The information architecture of the site was also reviewed. Orange Driver Training website should be informative and help users to getting in contact with Tracey in order to book a lesson. Tracey and I discussed the layout of the home page, I felt it was important to allow users to contact her directly from the home page. Therefore, the button within the banner contains a link to the contact form lower on the page.</p>
         <p>I dicussed the use of blogs within Tracey's site. Blogs, if relevant and regularly uploaded can improve SEO. However, they were not regulary uploaded and gave a negative tone to driving so we decided to remove them. To add, we refined the content in order for her users to find out the information faster.</p>
       </div>
       <Colours colours={['#fcbf49', '#D62828', '#E85D04', '#192F7C', '#03071E']}/>
-      <Wireframes title="After" imageArray={afterImages}></Wireframes>
+      <Wireframes title="After redesign" imageArray={afterImages}></Wireframes>
       <div className={styles.card}>
         <h3>Preparing for release</h3>
         <p>I am currently working through the wireframes to build the new design for Tracey. I have followed best practices in regards to DRY, Accessibility and SEO. The website's new design will be released by September 2020.</p>

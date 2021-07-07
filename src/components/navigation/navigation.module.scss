@@ -27,6 +27,14 @@
     }
   }
   nav {
+    .home {
+      width: 100px;
+      height: 100px;
+
+      img {
+        width: 100%;
+      }
+    }
     &.hide {
       display: none;
     }
@@ -35,7 +43,7 @@
     }
     @media screen and (min-width: 768px) {
       display: flex !important;
-      justify-content: flex-end;
+      justify-content: space-between;
     }
     ul {
       margin: 0;
@@ -72,12 +80,6 @@
           }
         }
       }
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    img {
-      display: none;
     }
   }
 }

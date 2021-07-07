@@ -1,3 +1,4 @@
+import { ReactChild } from "react"
 import styles from "./wireframes.module.scss"
 
 interface imageArrayProps {
@@ -6,13 +7,14 @@ interface imageArrayProps {
 }
 interface WireframeProps {
   title: string,
-  imageArray: imageArrayProps[]
+  imageArray: imageArrayProps[],
+  children?: ReactChild
 }
 export const Wireframes = (props: WireframeProps) => {
-  const { title, imageArray} = props
+  const { title, imageArray, children} = props
   return (
-    <section>
-      <h2 className={styles.title}>{title}</h2>
+    <section className={styles.container}>
+      <h2>{title}</h2>
         <div className={styles.card_container}>
           {imageArray.map((image, key) => 
             <div key={key}>
@@ -20,6 +22,7 @@ export const Wireframes = (props: WireframeProps) => {
             </div>
           )}
         </div>
+        {children}
     </section>
   )
 }

@@ -1,6 +1,6 @@
 import styles from "./card.module.scss"
 import cs from 'classnames'
-import { Fragment } from "react"
+import { Fragment, useState } from "react"
 
 export type CardType = 'Project' | 'Card'
 export type ImagePosition = 'Left' | 'Right'
@@ -13,17 +13,18 @@ interface CardProps {
   imagePosition?: ImagePosition
   type: CardType
   id?: string,
-  glassmorphic: boolean
+  imageOnHover: string
 }
 
 export const Card = (props: CardProps) => {
-  const { title, image, altText, content, imagePosition, type, id, glassmorphic} = props
+  const { title, image, altText, content, imagePosition, type, id, imageOnHover} = props
+  const [ cardImage, setCardImage] = useState(image)
+
   return (
     <div 
       className={cs(
         styles.container, 
-        imagePosition === "Left" ? styles.left : styles.right, 
-        glassmorphic && styles.glassmorphic,
+        imagePosition === "Left" ? styles.left : styles.right,
         type === 'Project' && styles.project 
       )} id={id}>
       {type === 'Project' ? (
@@ -34,7 +35,16 @@ export const Card = (props: CardProps) => {
         </Fragment>
       ): (
         <Fragment>
-            <img src={image} alt={altText}/>
+          <img 
+          src={cardImage} 
+          alt={altText} 
+          onMouseOver={() => 
+            setCardImage(imageOnHover)
+          } 
+          onMouseLeave={() => 
+            setCardImage(image)
+          }/>
+          
           <div className={styles.content}>
             <h3>{title}</h3>
             <p>{content}</p>
