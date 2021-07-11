@@ -11,7 +11,7 @@ import confirmation from "../../../assets/images/p2p-confirmation.png"
 import lighthouse from "../../../assets/images/lighthouse.png"
 import styles from "./pathToPurchase.module.scss"
 
-export const PathToPurchase = () => {
+const PathToPurchase = () => {
   const imageArray = [
     {image: levels, alt: "Levels page"},
     {image: details, alt: "Details page"},
@@ -52,3 +52,4 @@ export const PathToPurchase = () => {
     </main>
   )
 }
+export default PathToPurchase

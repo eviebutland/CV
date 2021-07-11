@@ -17,7 +17,7 @@ import beforeBlog from "../../../assets/images/before-blog.png"
 import { Footer } from "../../../components/footer/footer"
 import styles from "./orangeDriverTraining.module.scss"
 
-export const OrangeDriverTraining = () => {
+const OrangeDriverTraining = () => {
   const afterImages = [
     {image: homePage, alt: "Home page"},
     {image: drivingInstructorPage, alt: "Driving instructor page"}, 
@@ -59,3 +59,4 @@ export const OrangeDriverTraining = () => {
     </main>
   )
 }
+export default OrangeDriverTraining

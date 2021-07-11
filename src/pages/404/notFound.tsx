@@ -1,6 +1,6 @@
 import { Button } from "../../components/button/button"
 
-export const NotFound =() => {
+const NotFound =() => {
   return (
     <div>Page does not exist!
       <Button location="/"
@@ -8,3 +8,4 @@ export const NotFound =() => {
     </div>
   )
 }
+export default NotFound

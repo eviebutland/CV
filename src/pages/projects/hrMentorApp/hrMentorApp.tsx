@@ -1,4 +1,5 @@
 import { Subheader } from "../../../components/subheader/subheader"
+
 import { Colours } from "../../../components/colours/colours"
 import { Back } from "../../../components/back/back"
 import { Footer } from "../../../components/footer/footer"
@@ -10,7 +11,7 @@ import search from "../../../assets/images/mentor-search.png"
 import swaggerAPIDoc from "../../../assets/images/swagger-api-doc.png"
 import styles from "./hrMentorApp.module.scss"
 
-export const HrMentorApp = () => {
+const HrMentorApp = () => {
   const imageArray = [
     {image: home, alt: "Mentor app home page"},
     {image: register, alt: "Mentor app register page"},
@@ -39,3 +40,4 @@ export const HrMentorApp = () => {
     </main>
   )
 }
+export default HrMentorApp
