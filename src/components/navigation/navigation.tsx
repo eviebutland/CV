@@ -44,14 +44,14 @@ export const Navigation = () => {
       <nav className={isDisplayingMenu ? styles.display : styles.hide}>
         <ul>
           <li onMouseOver={handleHideDropdown}>
-            <a href="http://localhost:3000/#hobbies-interests">Hobbies and interests</a>
+            <a href="/#hobbies-interests">Hobbies and interests</a>
           </li>
           <li className={styles.hasDropdown} onClick={handleDisplayDropdown} onMouseOver={handleDisplayDropdown} >
             <p>Projects</p>
             <div className={cs(styles.dropdown, !isDisplayingDropdown && styles.hideDropdown)} onMouseLeave={handleHideDropdown}>
               <ul>
                 <li>
-                  <a href="http://localhost:3000/#projects">List of projects</a>
+                  <a href="/#projects">List of projects</a>
                 </li>
                 {Object.entries(projects).map((name, item) => <li key={item}>
                   <Link to={name[1].internalLink}>{name[1].name}</Link>
@@ -61,7 +61,7 @@ export const Navigation = () => {
             </div>
           </li>
           <li onMouseOver={handleHideDropdown}>
-            <a href="http://localhost:3000/#working-experience">Working Experience</a>
+            <a href="/#working-experience">Working Experience</a>
           </li>
         </ul>
       </nav>
