@@ -1,13 +1,12 @@
-import  { lazy } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "../../pages/home/home"
 import { Navigation } from "../navigation/navigation"
 import styles from './layout.module.scss'
 
-const OrangeDriverTraining = lazy(() => import('../../pages/projects/orangeDriverTraining/orangeDriverTraining'));
-const HrMentorApp = lazy(() => import('../../pages/projects/hrMentorApp/hrMentorApp'));
-const PathToPurchase = lazy(() => import('../../pages/projects/pathToPurchase/pathToPurchase'));
-const NotFound = lazy(() => import('../../pages/404/notFound'));
+import OrangeDriverTraining from '../../pages/projects/orangeDriverTraining/orangeDriverTraining';
+import HrMentorApp from '../../pages/projects/hrMentorApp/hrMentorApp';
+import PathToPurchase from '../../pages/projects/pathToPurchase/pathToPurchase';
+import NotFound from '../../pages/404/notFound';
 
 export const Layout = () => {
   return (
