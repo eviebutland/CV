@@ -42,7 +42,7 @@ export const Navigation = () => {
        
       <nav className={isDisplayingMenu ? styles.display : styles.hide}>
         <ul>
-          <li>
+          <li onMouseOver={handleHideDropdown}>
             <a href="http://localhost:3000/#hobbies-interests">Hobbies and interests</a>
           </li>
           <li className={styles.hasDropdown} onClick={handleDisplayDropdown} onMouseOver={handleDisplayDropdown} >
@@ -59,7 +59,7 @@ export const Navigation = () => {
               </ul>
             </div>
           </li>
-          <li>
+          <li onMouseOver={handleHideDropdown}>
             <a href="http://localhost:3000/#working-experience">Working Experience</a>
           </li>
         </ul>

@@ -8,7 +8,7 @@ interface imageArrayProps {
 interface WireframeProps {
   title: string,
   imageArray: imageArrayProps[],
-  children?: ReactChild
+  children?: ReactChild 
 }
 export const Wireframes = (props: WireframeProps) => {
   const { title, imageArray, children} = props
