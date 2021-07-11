@@ -21,29 +21,28 @@ export const Navigation = () => {
   return (
     <header className={cs(styles.container, isDisplayingMenu && styles.displayContainer)}>
       <div className={styles.top_container}>
-
-      <a href="/" className={styles.home}>
-        <img src={homeIcon} alt="Home"/> <strong>Evie Perren</strong>
-      </a>
-      <div className={styles.button_container}>
-        <button 
-          onClick={() => 
-            setIsDisplayingMenu(!isDisplayingMenu)
-          } 
-          className={styles.menu_button}
-        >
-          {isDisplayingMenu ? (
-            <img src={closeIcon} alt="close menu"/>
-          ) : (
-            <img src={menuIcon} alt="open menu"/>
-          )}
-        </button>
-      </div>
+        <a href="/" className={styles.home}>
+          <img src={homeIcon} alt="Home"/> <strong>Evie Perren</strong>
+        </a>
+        <div className={styles.button_container}>
+          <button 
+            onClick={() => 
+              setIsDisplayingMenu(!isDisplayingMenu)
+            } 
+            className={styles.menu_button}
+          >
+            {isDisplayingMenu ? (
+              <img src={closeIcon} alt="close menu"/>
+            ) : (
+              <img src={menuIcon} alt="open menu"/>
+            )}
+          </button>
+        </div>
       </div>
        
       <nav className={isDisplayingMenu ? styles.display : styles.hide} onClick={() => 
-            setIsDisplayingMenu(!isDisplayingMenu)
-          }>
+        setIsDisplayingMenu(false)
+      }>
         <ul>
           <li onMouseOver={handleHideDropdown}>
             <a href="/#hobbies-interests">Hobbies and interests</a>
