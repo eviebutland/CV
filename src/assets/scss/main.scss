@@ -2,13 +2,8 @@
 
 body {
   font-family: $font-family;
-  // background: linear-gradient(145deg, #3434ff, #b438ae 70.71%);
   margin: 0;
-}
-
-.root {
-  background-image: url("../../assets/images/glow.png");
-  background-position: center;
+  scroll-behavior: smooth;
 }
 
 p,

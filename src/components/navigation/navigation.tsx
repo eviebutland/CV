@@ -41,7 +41,9 @@ export const Navigation = () => {
       </div>
       </div>
        
-      <nav className={isDisplayingMenu ? styles.display : styles.hide}>
+      <nav className={isDisplayingMenu ? styles.display : styles.hide} onClick={() => 
+            setIsDisplayingMenu(!isDisplayingMenu)
+          }>
         <ul>
           <li onMouseOver={handleHideDropdown}>
             <a href="/#hobbies-interests">Hobbies and interests</a>

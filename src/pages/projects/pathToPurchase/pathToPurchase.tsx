@@ -29,7 +29,7 @@ export const PathToPurchase = () => {
       </Subheader>
       <Colours colours={['#00E6B8', '#80F3DC', '#F9E48F', '#F6BCBC', '#0d2834', ]}/>
       <Wireframes imageArray={imageArray} title="Live site"></Wireframes>
-      <section>
+      <section className={styles.card}>
         <p>Above show the screenshots from the live website. The designs were created by my collegues and collaborated on via Invision.</p>
         <p>In order to build this project within the expected time scale, we as a team use agile. This allowed us to plan increments of work we would be able to complete within our sprint length. Before each sprint we allowed for planning time, within this meeting we as a group would estimate tasks using story points. </p>
         <p>During this project, I was able to enhance my React knowledge and share my skills with the developers in the team. One area I grew most in was understanding a redux style state management. In order to develop my understanding, I researched the concept on React's documentation. </p>
