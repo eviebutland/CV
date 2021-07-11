@@ -1,10 +1,3 @@
-interface Projects {
-  name: string,
-  detail: string | string[],
-  internalLink: string,
-  externalLink?: string
-}
-
 export const projects = {
   orange: {
     name: "Orange driver training", 
@@ -20,7 +13,7 @@ export const projects = {
   },
   path: { 
     name: "Path to Purchase", 
-    detail: "This was a React app built within my current company, i worked in a team with 2 senior developers", 
+    detail: "Path to Purchase 2.0 is a React app designed to replace a legacy checkout journey within Simplyhealth. This checkout contains 5 steps to allow corporate clients to purchase a product via Simplyhealth.  ", 
     internalLink: "path-to-purchase", 
     externalLink: "asdasd"
   }

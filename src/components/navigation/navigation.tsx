@@ -5,6 +5,7 @@ import closeIcon from '../../assets/svg/times-solid.svg'
 import cs from 'classnames'
 import homeIcon from "../../assets/images/home-bitemoji.png"
 import { projects } from '../../projects/projects'
+import { Link } from 'react-router-dom'
 
 export const Navigation = () => {
   const [ isDisplayingMenu, setIsDisplayingMenu ] = useState(false)
@@ -53,7 +54,7 @@ export const Navigation = () => {
                   <a href="http://localhost:3000/#projects">List of projects</a>
                 </li>
                 {Object.entries(projects).map((name, item) => <li key={item}>
-                  <a href={name[1].internalLink}>{name[1].name}</a>
+                  <Link to={name[1].internalLink}>{name[1].name}</Link>
                   </li>
                 )}
               </ul>

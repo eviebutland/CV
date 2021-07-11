@@ -6,14 +6,10 @@ import { NotFound } from "../../pages/404/notFound";
 import { OrangeDriverTraining } from "../../pages/projects/orangeDriverTraining/orangeDriverTraining";
 import { HrMentorApp } from "../../pages/projects/hrMentorApp/hrMentorApp";
 import { PathToPurchase } from "../../pages/projects/pathToPurchase/pathToPurchase";
-import { CurrentPageContext } from "../../context/currentPageContext";
-import { useState } from "react";
 
 export const Layout = () => {
-  // const [currentPage, setCurrentPage] = useState(null)
   return (
     <Router>
-      {/* <CurrentPageContext.Provider value={{currentPage, setCurrentPage}}> */}
         <Navigation />
         <main className={styles.container}>
         <Switch>
@@ -32,7 +28,6 @@ export const Layout = () => {
           <Route component={NotFound}></Route>
         </Switch>
         </main>
-      {/* </CurrentPageContext.Provider> */}
     </Router>
   )
 }

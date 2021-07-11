@@ -6,13 +6,13 @@ export type StyleProps = 'full' | 'outline'
 
 interface ButtonProps {
   text: string,
-  onClick: ReactEventHandler
-  style: StyleProps,
+  onClick?: ReactEventHandler
+  design: StyleProps,
   location: string
 }
 export const Button = (props: ButtonProps) => {
-  const { onClick, text, style, location} = props
+  const { onClick, text, design, location} = props
   return (
-    <a href={location} onClick={onClick} className={cs(styles.button, style === 'full' ? styles.full : styles.outline)}>{text}</a>
+    <a href={location} onClick={onClick} className={cs(styles.button, design === 'full' ? styles.full : styles.outline)}>{text}</a>
   )
 }

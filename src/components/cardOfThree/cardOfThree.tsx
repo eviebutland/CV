@@ -20,7 +20,7 @@ export const CardOfThree = () => {
               content={projects.orange.detail} 
               type="Project"
               imageOnHover=""></Card>
-              <Button text="View project" onClick={() => console.log('go to new page')} style="full" location={`/${projects.orange.internalLink}`}></Button>
+              <Button text="View project" design="full" location={`/${projects.orange.internalLink}`}></Button>
           </div>
         </li>
         <li>
@@ -32,7 +32,7 @@ export const CardOfThree = () => {
               content={projects.hr.detail}
               type="Project"
               imageOnHover=""></Card>
-              <Button text="View project" onClick={() => console.log('go to new page')} style="full" location={`/${projects.hr.internalLink}`}></Button>
+              <Button text="View project" design="full" location={`/${projects.hr.internalLink}`}></Button>
           </div>
         </li>
         <li>
@@ -44,7 +44,7 @@ export const CardOfThree = () => {
               content={projects.path.detail} 
               type="Project"
               imageOnHover=""></Card>
-              <Button text="View project" onClick={() => console.log('go to new page')} style="full" location={`/${projects.path.internalLink}`}></Button>
+              <Button text="View project" onClick={() => console.log('go to new page')} design="full" location={`/${projects.path.internalLink}`}></Button>
           </div>
         </li>
       </ul>

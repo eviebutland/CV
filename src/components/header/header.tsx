@@ -25,14 +25,12 @@ export const Header = () => {
         <Button 
           location="#aboutMe"
           text="About me" 
-          onClick={() => console.log('go to section')}
-          style="full"
+          design="full"
           />
         <Button 
           location="#projects"
           text="Projects" 
-          onClick={() => console.log('go to section')}
-          style="outline"
+          design="outline"
           />
       </div>
     </section>
