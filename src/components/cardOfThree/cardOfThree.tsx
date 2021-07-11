@@ -3,7 +3,7 @@ import styles from './cardOfThree.module.scss'
 import orangeThumnail from "../../assets/images/orange-thumnail.png"
 import hrMentorAppThumbnail from "../../assets/images/mentor-thumbnail.png"
 import p2pThumbnail from "../../assets/images/p2p-thumbnail.png"
-
+import { projects } from "../../projects/projects"
 import { Button } from "../button/button"
 
 export const CardOfThree = () => {
@@ -14,37 +14,37 @@ export const CardOfThree = () => {
         <li>
           <div className={styles.item}>
             <Card 
-              title="Orange driver training" 
+              title={projects.orange.name}  
               image={orangeThumnail} 
-              altText="Orange driver training" 
-              content="Orange driver training is a driving instructor website going through a redesign. Built in Next.js, using SCSS modules. Tracey, the owner, was looking for a fresh design that would make her website look professional, clean, easy to navigate and stand out from the rest." 
+              altText={projects.orange.name} 
+              content={projects.orange.detail} 
               type="Project"
               imageOnHover=""></Card>
-              <Button text="View project" onClick={() => console.log('go to new page')} style="full" location="/orange-driver-training"></Button>
+              <Button text="View project" onClick={() => console.log('go to new page')} style="full" location={`/${projects.orange.internalLink}`}></Button>
           </div>
         </li>
         <li>
           <div className={styles.item}>
             <Card 
-              title="HR Mentor App" 
+              title={projects.hr.name} 
               image={hrMentorAppThumbnail} 
-              altText="HR Mentor app thumbnail" 
-              content="The HR mentor app was an internal project within my current company. This project was built using React, SCSS modules and express JS to connect to a Mongo DB using a REST API. The stakeholders wanted a platform to allow staff to sign up, or be find a mentor within the company." 
+              altText={projects.hr.name} 
+              content={projects.hr.detail}
               type="Project"
               imageOnHover=""></Card>
-              <Button text="View project" onClick={() => console.log('go to new page')} style="full" location="/hr-mentor-app"></Button>
+              <Button text="View project" onClick={() => console.log('go to new page')} style="full" location={`/${projects.hr.internalLink}`}></Button>
           </div>
         </li>
         <li>
           <div className={styles.item}>
             <Card 
-              title="Path to Purchase" 
+              title={projects.path.name}
               image={p2pThumbnail} 
-              altText="Orange driver training" 
-              content="This was a React app built within my current company, i worked in a team with 2 senior developers" 
+              altText={projects.path.name}
+              content={projects.path.detail} 
               type="Project"
               imageOnHover=""></Card>
-              <Button text="View project" onClick={() => console.log('go to new page')} style="full" location="/path-to-purchase"></Button>
+              <Button text="View project" onClick={() => console.log('go to new page')} style="full" location={`/${projects.path.internalLink}`}></Button>
           </div>
         </li>
       </ul>

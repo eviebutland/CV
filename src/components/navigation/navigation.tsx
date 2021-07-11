@@ -4,11 +4,26 @@ import menuIcon from '../../assets/svg/bars-solid.svg'
 import closeIcon from '../../assets/svg/times-solid.svg'
 import cs from 'classnames'
 import homeIcon from "../../assets/images/home-bitemoji.png"
+import { projects } from '../../projects/projects'
 
 export const Navigation = () => {
   const [ isDisplayingMenu, setIsDisplayingMenu ] = useState(false)
+  const [ isDisplayingDropdown, setIsDisplayingDropdown ] = useState(false)
+
+  const handleDisplayDropdown = () => {
+    setIsDisplayingDropdown(true)
+  }
+  const handleHideDropdown = () => {
+    setIsDisplayingDropdown(false)
+  }
+
   return (
     <header className={cs(styles.container, isDisplayingMenu && styles.displayContainer)}>
+      <div className={styles.top_container}>
+
+      <a href="/" className={styles.home}>
+        <img src={homeIcon} alt="Home"/> <strong>Evie Perren</strong>
+      </a>
       <div className={styles.button_container}>
         <button 
           onClick={() => 
@@ -23,16 +38,26 @@ export const Navigation = () => {
           )}
         </button>
       </div>
+      </div>
+       
       <nav className={isDisplayingMenu ? styles.display : styles.hide}>
-        <a href="/" className={styles.home}>
-          <img src={homeIcon} alt="Home"/>
-        </a>
         <ul>
           <li>
             <a href="http://localhost:3000/#hobbies-interests">Hobbies and interests</a>
           </li>
-          <li>
-            <a href="http://localhost:3000/#projects">Projects</a>
+          <li className={styles.hasDropdown} onClick={handleDisplayDropdown} onMouseOver={handleDisplayDropdown} >
+            <p>Projects</p>
+            <div className={cs(styles.dropdown, !isDisplayingDropdown && styles.hideDropdown)} onMouseLeave={handleHideDropdown}>
+              <ul>
+                <li>
+                  <a href="http://localhost:3000/#projects">List of projects</a>
+                </li>
+                {Object.entries(projects).map((name, item) => <li key={item}>
+                  <a href={name[1].internalLink}>{name[1].name}</a>
+                  </li>
+                )}
+              </ul>
+            </div>
           </li>
           <li>
             <a href="http://localhost:3000/#working-experience">Working Experience</a>

@@ -1,9 +1,36 @@
 @import "../../assets/scss/main";
 
 .container {
-  padding: 20px 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
 
+  .top_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @media screen and (min-width: 1024px) {
+      width: auto;
+    }
+  }
+  .home {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: $copy;
+
+    img {
+      padding-right: 10px;
+      width: 30px;
+      height: 40px;
+      @media screen and (min-width: 1024px) {
+        width: 75px;
+        height: 100px;
+      }
+    }
+  }
   &.displayContainer {
+    display: block;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -11,9 +38,9 @@
     z-index: 100;
   }
   .button_container {
-    display: flex;
+    display: inline-flex;
     justify-content: flex-end;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
       display: none;
     }
     .menu_button {
@@ -27,38 +54,39 @@
     }
   }
   nav {
-    .home {
-      width: 100px;
-      height: 100px;
-
-      img {
-        width: 100%;
-      }
-    }
     &.hide {
       display: none;
     }
     &.display {
       width: 100%;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
       display: flex !important;
       justify-content: space-between;
+      align-items: center;
     }
     ul {
       margin: 0;
-      padding: 0;
+      padding: 10px;
 
+      @media screen and (min-width: 1024px) {
+      }
       li {
         list-style: none;
-        margin: 15px;
-        border-bottom: 1px solid grey;
+        // border-bottom: 1px solid grey;
+        cursor: pointer;
+        padding: $standard-spacing-vertical $standard-spacing-horizontal;
+        text-decoration: none;
+        color: $copy;
+        position: relative;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1024px) {
           display: inline-block;
           border-bottom: none;
-          margin: 10px;
-          padding: 0 $standard-spacing-horizontal;
+          margin: 0;
+          &:hover {
+            border-bottom: 1px solid $copy-light;
+          }
 
           &:last-of-type {
             margin-right: 0;
@@ -68,16 +96,68 @@
           }
         }
 
-        a {
-          padding: $standard-spacing-vertical 0;
-          text-decoration: none;
-          color: $copy;
-          @media screen and (min-width: 768px) {
-            padding: 0 0 3px 0;
-            &:hover {
-              border-bottom: 1px solid $copy-light;
+        &.hasDropdown {
+          @media screen and (min-width: 1024px) {
+            text-align: center;
+            width: 130px;
+            p {
+              margin: auto;
             }
           }
+          p {
+            margin: 0;
+          }
+
+          &:hover {
+            border-bottom: 1px solid transparent;
+          }
+
+          & div.dropdown {
+            display: block;
+            text-align: left;
+            background-color: white;
+
+            @media screen and (min-width: 1024px) {
+              &.hideDropdown {
+                display: none;
+              }
+              width: 100%;
+              box-shadow: $box-shadow;
+              left: 0;
+              top: 30px;
+              position: absolute;
+            }
+            ul {
+              margin: 0;
+              @media screen and (min-width: 1024px) {
+                padding: 10px;
+              }
+
+              li {
+                margin: 0;
+                @media screen and (min-width: 1024px) {
+                  padding: 10px;
+                }
+
+                &:last-of-type {
+                  border: none;
+                }
+                &:hover {
+                  background-color: $primary;
+                  border: none;
+
+                  a {
+                    color: $white;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: $copy;
         }
       }
     }
