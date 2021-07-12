@@ -1,4 +1,5 @@
 @import "./variables.scss";
+@import "./buttons";
 
 body {
   font-family: $font-family;
@@ -42,5 +43,36 @@ h3,
   }
   @media (min-width: 1440px) {
     font-size: $h3-desktop-large-font-size;
+  }
+}
+
+.button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  min-width: 100px;
+  text-decoration: none;
+  margin: 0 10px;
+  text-align: center;
+
+  &.full {
+    border: 1px solid $primary;
+    background-color: $primary;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $copy;
+    }
+  }
+  &.outline {
+    border: 1px solid $primary;
+    background-color: transparent;
+    color: $copy;
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
   }
 }

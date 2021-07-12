@@ -4,7 +4,8 @@ import orangeThumnail from "../../assets/images/orange-thumnail.png"
 import hrMentorAppThumbnail from "../../assets/images/mentor-thumbnail.png"
 import p2pThumbnail from "../../assets/images/p2p-thumbnail.png"
 import { projects } from "../../projects/projects"
-import { Button } from "../button/button"
+import { Link } from "react-router-dom"
+import "../../assets/scss/main.scss"
 
 export const CardOfThree = () => {
   return (
@@ -20,7 +21,9 @@ export const CardOfThree = () => {
               content={projects.orange.detail} 
               type="Project"
               imageOnHover=""></Card>
-              <Button text="View project" design="full" location={`/${projects.orange.internalLink}`}></Button>
+              <div className={styles.button_container}>
+                <Link to={projects.orange.internalLink} className="button full">View project</Link>
+              </div>
           </div>
         </li>
         <li>
@@ -32,7 +35,9 @@ export const CardOfThree = () => {
               content={projects.hr.detail}
               type="Project"
               imageOnHover=""></Card>
-              <Button text="View project" design="full" location={`/${projects.hr.internalLink}`}></Button>
+              <div className={styles.button_container}>
+                <Link to={projects.hr.internalLink} className="button full">View project</Link>
+              </div>
           </div>
         </li>
         <li>
@@ -44,7 +49,9 @@ export const CardOfThree = () => {
               content={projects.path.detail} 
               type="Project"
               imageOnHover=""></Card>
-              <Button text="View project" onClick={() => console.log('go to new page')} design="full" location={`/${projects.path.internalLink}`}></Button>
+              <div className={styles.button_container}>
+                <Link to={projects.path.internalLink} className="button full">View project</Link>
+              </div>
           </div>
         </li>
       </ul>
