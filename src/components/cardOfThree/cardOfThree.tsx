@@ -21,9 +21,7 @@ export const CardOfThree = () => {
               content={projects.orange.detail} 
               type="Project"
               imageOnHover=""></Card>
-              <div className={styles.button_container}>
-                <Link to={projects.orange.internalLink} className="button full">View project</Link>
-              </div>
+              <Link to={projects.orange.internalLink} className="button full">View project</Link>
           </div>
         </li>
         <li>
@@ -35,9 +33,7 @@ export const CardOfThree = () => {
               content={projects.hr.detail}
               type="Project"
               imageOnHover=""></Card>
-              <div className={styles.button_container}>
-                <Link to={projects.hr.internalLink} className="button full">View project</Link>
-              </div>
+              <Link to={projects.hr.internalLink} className="button full">View project</Link>
           </div>
         </li>
         <li>
@@ -49,9 +45,7 @@ export const CardOfThree = () => {
               content={projects.path.detail} 
               type="Project"
               imageOnHover=""></Card>
-              <div className={styles.button_container}>
-                <Link to={projects.path.internalLink} className="button full">View project</Link>
-              </div>
+              <Link to={projects.path.internalLink} className="button full">View project</Link>
           </div>
         </li>
       </ul>
