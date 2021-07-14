@@ -21,7 +21,7 @@ export const Home = () => {
             title="About me" 
             image={bitemoji}
             altText="Bitemoji of me" 
-            content="I am Front-End Software Developer born and raised in Hampshire, UK. With a passion for UI/UX, I have learnt to develop unique and highly functional systems from requirements. I enjoy being able to contribute my skills to help a business grow and deliever the best online experience for their customers...ADD MORE HERE " 
+            content="I am Front-End Software Developer born and raised in Hampshire, UK. With a passion for UI/UX, I have learnt to develop unique and highly functional systems from requirements. I enjoy being able to contribute my skills to help a business grow and deliver the best online experience for their customers." 
             type="Card" 
             imagePosition="Left"
             id="aboutMe"
@@ -30,7 +30,7 @@ export const Home = () => {
             title="My hobbies and interests" 
             image={bitemojiHobbies} 
             altText="Hobbies and interests bitemoji" 
-            content="From working with Front-end technologies, I have learnt to use React, Vue, AEM (Adobe Experience manager), Prismic, Git, Github, Azure (Blob storage and App services). I have also learnt to use Express JS to build REST API's to connect to a MongoDB. Outside of work, I am learning React Native, UI design, figma and more." 
+            content="I have always been fascinated in understanding how things work which led me to learn software development in my free time. From working with Front-end technologies, I have learnt to use React, Vue, AEM (Adobe Experience Manager), Prismic, Git, Github, Azure (Blob storage and App services). I have also learnt to use Express JS to build REST API's to connect to a MongoDB. Outside of work, I am learning React Native, UI design, figma and more." 
             type="Card" 
             imagePosition="Right" 
             id="hobbies-interests"

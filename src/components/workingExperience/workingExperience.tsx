@@ -12,7 +12,7 @@ export const WorkingExperience = () => {
             </div>
             <div className={styles.role}>
               <h3>Junior software developer</h3>
-              <p>Following the completion of my apprenticeship, I became a Junior Software developer. This role entails converting requirements from stakeholders around the business into highly functional working code. I contribute to BAU tasks such as improving the functionality within Simplyhealth’s CMS (AEM), increasing Accessibility and functionality throughout our web estate and building projects to the highest quality using SOLID and DRY principles. I am also the Lead developer on Interaction studio, which allows our marketing team to provide personalised journeys throughout the customers experience with Simplyhealth..</p>
+              <p>Following the completion of my apprenticeship, I became a Junior Software developer. This role entails converting requirements from stakeholders around the business into highly functional working code. I contribute to BAU tasks such as improving the functionality within Simplyhealth’s CMS (AEM), increasing Accessibility and functionality throughout our web estate and building projects to the highest quality using SOLID and DRY principles. I am also the Lead developer on Interaction studio, which allows our marketing team to provide personalised journeys throughout the customers experience with Simplyhealth.</p>
             </div>
           </li>
           <li className={styles.list_item}>
