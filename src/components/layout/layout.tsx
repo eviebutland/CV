@@ -1,42 +1,46 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home } from "../../pages/home/home"
-import { Navigation } from "../navigation/navigation"
-import styles from './layout.module.scss'
+import { Home } from "../../pages/home/home";
+import { Navigation } from "../navigation/navigation";
+import styles from "./layout.module.scss";
 
-import OrangeDriverTraining from '../../pages/projects/orangeDriverTraining/orangeDriverTraining';
-import HrMentorApp from '../../pages/projects/hrMentorApp/hrMentorApp';
-import PathToPurchase from '../../pages/projects/pathToPurchase/pathToPurchase';
-import NotFound from '../../pages/404/notFound';
+import OrangeDriverTraining from "../../pages/projects/orangeDriverTraining/orangeDriverTraining";
+import HrMentorApp from "../../pages/projects/hrMentorApp/hrMentorApp";
+import PathToPurchase from "../../pages/projects/pathToPurchase/pathToPurchase";
+import NotFound from "../../pages/404/notFound";
 import InventoryPlatform from "../../pages/projects/inventory/inventory";
 import MovieLibrary from "../../pages/projects/movieLibrary/movieLibrary";
+import FitnessApp from "../../pages/projects/fitnessApp/fitnessApp";
 
 export const Layout = () => {
   return (
     <Router>
-        <Navigation />
-        <main className={styles.container}>
+      <Navigation />
+      <main className={styles.container}>
         <Switch>
           <Route exact path="/">
-            <Home/>
+            <Home />
           </Route>
           <Route exact path="/orange-driver-training">
-            <OrangeDriverTraining/>
+            <OrangeDriverTraining />
           </Route>
           <Route exact path="/hr-mentor-app">
-            <HrMentorApp/>
+            <HrMentorApp />
           </Route>
           <Route exact path="/path-to-purchase">
-            <PathToPurchase/>
+            <PathToPurchase />
           </Route>
           <Route exact path="/inventory-platform">
-            <InventoryPlatform/>
+            <InventoryPlatform />
           </Route>
           <Route exact path="/movie-library">
-            <MovieLibrary/>
+            <MovieLibrary />
+          </Route>
+          <Route exact path="/fitness-app">
+            <FitnessApp />
           </Route>
           <Route component={NotFound}></Route>
         </Switch>
-        </main>
+      </main>
     </Router>
-  )
-}
+  );
+};
