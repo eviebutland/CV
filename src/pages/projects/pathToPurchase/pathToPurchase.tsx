@@ -25,7 +25,7 @@ const PathToPurchase = () => {
       <Subheader 
         title="Path To Purchase " 
         tags={['Responsive design', 'Front end development', 'Accessibility', 'React', 'SEO focus', 'Team work', 'Fast paced']}>
-          <p>Path to Purchase 2.0 is a React app designed to replace a legacy checkout journey within my current company. This checkout contains 5 steps to allow corporate clients to purchase a product. The React app is brand washed to represent nine different clients, with their logo, plan details and contact number differing between. I worked with two senior developers and a UI designer to complete tasks in fornightly sprints. My tasks varied from storing values to state using React hooks, as well as ensuring we meant a high quality of work in peer reviews - with a focus on Accessibility.</p>
+          <p>Path to Purchase 2.0 is a React app designed to replace a legacy checkout journey within my previous company. This checkout contains 5 steps to allow corporate clients to purchase a product. The React app is brand washed to represent nine different clients, with their logo, plan details and contact number differing between. I worked with two senior developers and a UI designer to complete tasks in fornightly sprints. My tasks varied from storing values to state using React hooks, as well as ensuring we meant a high quality of work in peer reviews - with a focus on Accessibility.</p>
       </Subheader>
       <Colours colours={['#00E6B8', '#80F3DC', '#F9E48F', '#F6BCBC', '#0d2834', ]}/>
       <Wireframes imageArray={imageArray} title="Live site"></Wireframes>

@@ -1,4 +1,4 @@
-import styles from './workingExperience.module.scss'
+import styles from "./workingExperience.module.scss";
 
 export const WorkingExperience = () => {
   return (
@@ -7,32 +7,98 @@ export const WorkingExperience = () => {
       <ul>
         <li className={styles.list_item}>
           <div className={styles.company}>
+            <h3>Hectare</h3>
+            <p>2022-present</p>
+          </div>
+          <div className={styles.role}>
+            <h3>Fullstack Engineer</h3>
+            <p>
+              After a year in my current position, I was promoted to Fullstack
+              Engineer. I have taken on more responsibility and continue to
+              learn in and outside of work to improve my skills and help the
+              team. I am able to plan, manage and deliver what is required
+              within the team on time and to a high quality. I enjoy a challenge
+              and working in a fast paced enviroment where I can really test my
+              skills.
+            </p>
+          </div>
+        </li>
+        <li className={styles.list_item}>
+          <div className={styles.company}>
+            <h3>Hectare</h3>
+            <p>2021-2022</p>
+          </div>
+          <div className={styles.role}>
+            <h3>Fullstack developer</h3>
+            <p>
+              I joined Hectare as a Fullstack developer which enabled me to
+              grasp both sides of software development I am passionate about.
+              The role allowed me to cover a multitude of technologies and help
+              me gain experience working in a hands-on start-up environment.
+              During my time in this role, I was able to work across the teams
+              and closely with stakeholders to achieve the best possible
+              outcome. I led the integration of the newly created APIs into the
+              Frontend code base singlehandly, with additional resource on
+              completion. I also led multiple sprint planning meetings and
+              organised the work into managable pieces.
+            </p>
+          </div>
+        </li>
+        <li className={styles.list_item}>
+          <div className={styles.company}>
             <h3>Simplyhealth</h3>
-            <p>2020-Present</p>
-            </div>
-            <div className={styles.role}>
-              <h3>Junior software developer</h3>
-              <p>Following the completion of my apprenticeship, I became a Junior Software developer. This role entails converting requirements from stakeholders around the business into highly functional working code. I contribute to BAU tasks such as improving the functionality within Simplyhealth’s CMS (AEM), increasing Accessibility and functionality throughout our web estate and building projects to the highest quality using SOLID and DRY principles. I am also the Lead developer on Interaction studio, which allows our marketing team to provide personalised journeys throughout the customers experience with Simplyhealth.</p>
-            </div>
-          </li>
-          <li className={styles.list_item}>
-            <div className={styles.company}>
-              <h3>Simplyhealth</h3>
-              <p>2019-2020</p>
-            </div>
-            <div className={styles.role}>
-              <h3>Apprentice software developer</h3>
-              <p>I completed my apprenticeship with Firebrand in September 2020, following 2 exams (MTA Database Fundamentals, MTHTML5 Microsoft Specialist: Programming with HTML5 with Javascript and CSS3) as well as meeting a list of criteria on projects within my work-place. For example:
-              </p> 
-              <ul>
-                <li>1.1ci: Stakeholders: Understanding who they are and what their 'stake' is</li>
-                <li>6.1d: Can apply reconcile design against analysis models</li>
-                <li>6.1e: Can design software solutions to meet requirements</li>
-                <li>7.1a: Can take a variety of data and business requirements and convert them into basic analysis artefacts to understand and can clarify the intended use of the proposed software</li>
-              </ul>
-              <p>From my apprenticeship, I was able to learn hands-on skills to increase my knowledge of software development and become actively involved in all BAU tasks within Simplyhealth.</p>
-            </div>
-          </li>
+            <p>2020-2021</p>
+          </div>
+          <div className={styles.role}>
+            <h3>Junior software developer</h3>
+            <p>
+              Following the completion of my apprenticeship, I became a Junior
+              Software developer. This role entails converting requirements from
+              stakeholders around the business into highly functional working
+              code. I contribute to BAU tasks such as improving the
+              functionality within Simplyhealth’s CMS (AEM), increasing
+              Accessibility and functionality throughout our web estate and
+              building projects to the highest quality using SOLID and DRY
+              principles. I am also the Lead developer on Interaction studio,
+              which allows our marketing team to provide personalised journeys
+              throughout the customers experience with Simplyhealth.
+            </p>
+          </div>
+        </li>
+        <li className={styles.list_item}>
+          <div className={styles.company}>
+            <h3>Simplyhealth</h3>
+            <p>2019-2020</p>
+          </div>
+          <div className={styles.role}>
+            <h3>Apprentice software developer</h3>
+            <p>
+              I completed my apprenticeship with Firebrand in September 2020,
+              following 2 exams (MTA Database Fundamentals, MTHTML5 Microsoft
+              Specialist: Programming with HTML5 with Javascript and CSS3) as
+              well as meeting a list of criteria on projects within my
+              work-place. For example:
+            </p>
+            <ul>
+              <li>
+                1.1ci: Stakeholders: Understanding who they are and what their
+                'stake' is
+              </li>
+              <li>6.1d: Can apply reconcile design against analysis models</li>
+              <li>6.1e: Can design software solutions to meet requirements</li>
+              <li>
+                7.1a: Can take a variety of data and business requirements and
+                convert them into basic analysis artefacts to understand and can
+                clarify the intended use of the proposed software
+              </li>
+            </ul>
+            <p>
+              From my apprenticeship, I was able to learn hands-on skills to
+              increase my knowledge of software development and become actively
+              involved in all BAU tasks within Simplyhealth.
+            </p>
+          </div>
+        </li>
         <li className={styles.list_item}>
           <div className={styles.company}>
             <h3>Simplyhealth</h3>
@@ -40,7 +106,13 @@ export const WorkingExperience = () => {
           </div>
           <div className={styles.role}>
             <h3>Customer Service advisor</h3>
-            <p>As a Contact Advisor, I spoke to customers over the phone, LiveChat and email to deal with their complex queries. My role was to understand their concerns with their product and establish a satisfactory outcome. This required organisation, working to resolve issues swiftly and in alignment with our regulations. </p>
+            <p>
+              As a Contact Advisor, I spoke to customers over the phone,
+              LiveChat and email to deal with their complex queries. My role was
+              to understand their concerns with their product and establish a
+              satisfactory outcome. This required organisation, working to
+              resolve issues swiftly and in alignment with our regulations.{" "}
+            </p>
           </div>
         </li>
         <li className={styles.list_item}>
@@ -50,7 +122,11 @@ export const WorkingExperience = () => {
           </div>
           <div className={styles.role}>
             <h3>Customer Service assistant</h3>
-            <p>At Sainsbury’s, I developed further relationship skills by serving customers and representing the company. I take being a face of the business seriously.</p>
+            <p>
+              At Sainsbury’s, I developed further relationship skills by serving
+              customers and representing the company. I take being a face of the
+              business seriously.
+            </p>
           </div>
         </li>
         <li className={styles.list_item}>
@@ -60,10 +136,14 @@ export const WorkingExperience = () => {
           </div>
           <div className={styles.role}>
             <h3>Customer Service assistant</h3>
-            <p>This required face-to-face interactions with customers assisting them with their queries and seeking resolution. Being customer facing, I was polite and respectful.</p>
+            <p>
+              This required face-to-face interactions with customers assisting
+              them with their queries and seeking resolution. Being customer
+              facing, I was polite and respectful.
+            </p>
           </div>
         </li>
       </ul>
     </section>
-  )
-}
+  );
+};

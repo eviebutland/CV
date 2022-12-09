@@ -7,6 +7,8 @@ import OrangeDriverTraining from '../../pages/projects/orangeDriverTraining/oran
 import HrMentorApp from '../../pages/projects/hrMentorApp/hrMentorApp';
 import PathToPurchase from '../../pages/projects/pathToPurchase/pathToPurchase';
 import NotFound from '../../pages/404/notFound';
+import InventoryPlatform from "../../pages/projects/inventory/inventory";
+import MovieLibrary from "../../pages/projects/movieLibrary/movieLibrary";
 
 export const Layout = () => {
   return (
@@ -25,6 +27,12 @@ export const Layout = () => {
           </Route>
           <Route exact path="/path-to-purchase">
             <PathToPurchase/>
+          </Route>
+          <Route exact path="/inventory-platform">
+            <InventoryPlatform/>
+          </Route>
+          <Route exact path="/movie-library">
+            <MovieLibrary/>
           </Route>
           <Route component={NotFound}></Route>
         </Switch>

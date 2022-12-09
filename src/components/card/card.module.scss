@@ -5,6 +5,7 @@
   width: 100%;
   padding-top: 30px;
 
+
   @media (min-width: 768px) {
     text-align: left;
   }
@@ -30,6 +31,13 @@
     @media (min-width: 768px) {
       display: flex;
       flex-direction: column;
+    }
+  }
+
+  & .card_link {
+    text-decoration: none !important;
+    h3 {
+      color : black
     }
   }
   h3 {

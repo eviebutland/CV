@@ -47,14 +47,14 @@ const OrangeDriverTraining = () => {
       <div className={styles.card}>
         <h3>Dicussion with stakeholder</h3>
         <p>Orange Driver Training website should be informative and help users to getting in contact with the stakeholder in order to book a lesson. The information architecture of the site was also reviewed. The stakeholder and I discussed the layout of the home page, I felt it was important to allow users to contact her directly from the home page. Therefore, the button within the banner contains a link to the contact form lower on the page.</p>
-        <p>The stakeholder's current website contained blogs. Blogs, if relevant and regularly uploaded can improve SEO. However, they were not regulary uploaded and gave a negative tone to driving so we decided to remove them. To add, we refined the content in order for her users to find out the information faster.</p>
+        <p>The stakeholder's previous website contained blogs. Blogs, if relevant and regularly uploaded can improve SEO. However, they were not regulary uploaded and gave a negative tone to driving so we decided to remove them. To add, we refined the content in order for her users to find out the information faster.</p>
       </div>
       <Colours colours={['#fcbf49', '#D62828', '#E85D04', '#192F7C', '#03071E']}/>
       <Wireframes title="After redesign" imageArray={afterImages}></Wireframes>
       <div className={styles.card}>
         <h3>Preparing for release</h3>
         <p>The stakeholder feels her requirements have been meant by the designs, which allowed me to start making the changes required.</p>
-        <p>I am currently working through the wireframes to build the new design. I have followed best practices in regards to DRY, Accessibility and SEO. The website's new design will be released by September 2020.</p>
+        <p>I have followed best practices in regards to DRY, Accessibility and SEO. During this experience, I was able to grow a huge understanding to the software development process. I was fortunate enough to control all aspects of this redesign through to deployment.</p>
       </div>
       <Footer></Footer>
     </main>
