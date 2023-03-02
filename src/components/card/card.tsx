@@ -43,15 +43,11 @@ export const Card = (props: CardProps) => {
     >
       {type === "Project" ? (
         <Fragment>
-          <img src={image} alt={altText} />
-          {link ? (
-            <Link className={styles.card_link} to={link}>
-              <h3>{title}</h3>
-            </Link>
-          ) : (
+          <Link className={styles.card_link} to={link ?? "/"}>
+            <img src={image} alt={altText} />
             <h3>{title}</h3>
-          )}
-          <p>{content}</p>
+            <p>{content}</p>
+          </Link>
         </Fragment>
       ) : (
         <Fragment>
