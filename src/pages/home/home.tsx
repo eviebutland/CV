@@ -46,7 +46,7 @@ export const Home = () => {
         <Timeline />
 
         <div className={styles.cv}>
-          <a href={PDF} target="_blank" rel="noreferrer">
+          <a href={PDF} target="_blank" rel="noopener noreferrer">
             View PDF CV
           </a>
         </div>
