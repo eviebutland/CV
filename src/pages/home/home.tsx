@@ -10,6 +10,7 @@ import bitemojiHobbies from "../../assets/images/hobbies.png";
 import biteemojiHobbiesTwo from "../../assets/images/working-bitemoji.png";
 import styles from "./home.module.scss";
 import { WorkingExperience } from "../../components/workingExperience/workingExperience";
+import PDF from "../../assets/PDF/Evie-Perren.pdf";
 
 export const Home = () => {
   return (
@@ -21,8 +22,8 @@ export const Home = () => {
             title="About me"
             image={bitemoji}
             altText="Bitemoji of me"
-            content="I am Fullstack Software Engineer born and raised in Hampshire, UK. With a passion for UI/UX, I have learnt to develop unique and highly functional systems from requirements. 
-            I enjoy being able to contribute my skills to help a business grow and deliver the best online experience for their customers. Currently working in the argitech space, bringing data-led innovations for post production supply chains."
+            content="I am Fullstack Software Engineer based in Hampshire, UK. With a strong passion for problem solving and over 4 years experience, I have learnt build maintainable features to complex challenges to a high quality, following best practices and delivering within the required deadline. 
+            I thrive working in a fast paced environment with opportunity to grow and strength my skills. Currently working at an Argi-tech SAAS start-up, bringing data-led innovations for post production supply chains."
             type="Card"
             imagePosition="Left"
             id="aboutMe"
@@ -32,9 +33,9 @@ export const Home = () => {
             title="My hobbies and interests"
             image={bitemojiHobbies}
             altText="Hobbies and interests bitemoji"
-            content="I have always been fascinated in understanding how things work which led me to learn software development in my free time. 
-            From working with Front-end technologies, I have learnt to use React, Vue, CMS's (AEM (Adobe Experience Manager) and Prismic), Version control (Git, Github), Azure (Blob storage and App services). 
-            I have also learnt to use Express JS to build REST API's to connect to a MongoDB. Outside of work, I am learning Postgres, Typescript and python"
+            content="I have a passion for creating simple solutions to complex problems and contributing my knowledge to help a company succeed. In my free time I love to learn new technologies, read and travel. 
+            My current side project I am using to gain knowledge is creating a Fitness App. From the ground up, I have built multiple API's, maintain a Postgres database and building an easy-to-use UI.
+           "
             type="Card"
             imagePosition="Right"
             id="hobbies-interests"
@@ -43,6 +44,13 @@ export const Home = () => {
         </section>
         <CardWrapper></CardWrapper>
         <Timeline />
+
+        <div className={styles.cv}>
+          <a href={PDF} target="_blank" rel="noreferrer">
+            View PDF CV
+          </a>
+        </div>
+
         <WorkingExperience></WorkingExperience>
       </section>
       <Footer />

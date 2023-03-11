@@ -11,15 +11,16 @@ export const WorkingExperience = () => {
             <p>2022-present</p>
           </div>
           <div className={styles.role}>
-            <h3>Fullstack Engineer</h3>
+            <h3>Fullstack Software Engineer</h3>
             <p>
-              After a year in my current position, I was promoted to Fullstack
-              Engineer. I have taken on more responsibility and continue to
-              learn in and outside of work to improve my skills and help the
-              team. I am able to plan, manage and deliver what is required
-              within the team on time and to a high quality. I enjoy a challenge
-              and working in a fast paced enviroment where I can really test my
-              skills.
+              Following a promotion in December 2022, I took in further
+              responsibly within the team. This included bringing forward new
+              ideas and executing them to ensure a stable platform as the
+              product usage continues to grow. I have built a strong
+              relationship with stake holders with the company, collaborating to
+              solve complex issues our users face on a regular basis. This in
+              turn has helped me build knowledge on problem solving and creating
+              simple solutions to complex problems.
             </p>
           </div>
         </li>
@@ -29,18 +30,15 @@ export const WorkingExperience = () => {
             <p>2021-2022</p>
           </div>
           <div className={styles.role}>
-            <h3>Fullstack developer</h3>
+            <h3>Fullstack Software developer</h3>
             <p>
-              I joined Hectare as a Fullstack developer which enabled me to
-              grasp both sides of software development I am passionate about.
-              The role allowed me to cover a multitude of technologies and help
-              me gain experience working in a hands-on start-up environment.
-              During my time in this role, I was able to work across the teams
-              and closely with stakeholders to achieve the best possible
-              outcome. I led the integration of the newly created APIs into the
-              Frontend code base singlehandly, with additional resource on
-              completion. I also led multiple sprint planning meetings and
-              organised the work into managable pieces.
+              In order to expand my knowledge, I joined the Argi-Tech SAAS start
+              up in September 2021. In this role, I learnt to work at a fast
+              pace, delivering high quality features to a green field user base.
+              This required strong communication and prioritisation skills to
+              achieve the best product within strict and short timeframes.
+              Within this role, I transitioned my knowledge to work with NuxtJS
+              on Front end, and MongoDB with Express on the Back end.
             </p>
           </div>
         </li>

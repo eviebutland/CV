@@ -1,38 +1,34 @@
-import { Button } from "../button/button"
-import styles from './header.module.scss'
-import bitemoji from '../../assets/images/image-of-me.png'
-import bitemojiHover from '../../assets/images/image-of-me-two.png'
-import { useState } from "react"
+import { Button } from "../button/button";
+import styles from "./header.module.scss";
+import bitemoji from "../../assets/images/image-of-me.png";
+import bitemojiHover from "../../assets/images/image-of-me-two.png";
+import { useState } from "react";
 
 export const Header = () => {
-  const [image, setImage] = useState(bitemoji)
-  return(
+  const [image, setImage] = useState(bitemoji);
+  return (
     <section className={styles.container}>
       <div>
-        <img 
-          src={image} 
-          alt="bitemoji of me" 
-          onMouseOver={() => 
-            setImage(bitemojiHover)
-          } 
-          onMouseLeave={() => 
-            setImage(bitemoji)
-          }/>
+        <img
+          src={image}
+          alt="bitemoji of me"
+          onMouseOver={() => setImage(bitemojiHover)}
+          onMouseLeave={() => setImage(bitemoji)}
+        />
       </div>
       <h1>Hello</h1>
       <h2>I am Evie, a Fullstack Software Engineer</h2>
       <div className={styles.button_container}>
-        <Button 
-          location="#aboutMe"
-          text="About me" 
+        <Button location="#aboutMe" text="About me" design="full" />
+        <Button location="#projects" text="Projects" design="full" />
+
+        <Button
+          location="https://github.com/eviebutland"
+          text="Github"
           design="full"
-          />
-        <Button 
-          location="#projects"
-          text="Projects" 
-          design="outline"
-          />
+          target="_blank"
+        />
       </div>
     </section>
-  )
-}
+  );
+};
