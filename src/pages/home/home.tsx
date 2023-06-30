@@ -10,7 +10,7 @@ import bitemojiHobbies from "../../assets/images/hobbies.png";
 import biteemojiHobbiesTwo from "../../assets/images/working-bitemoji.png";
 import styles from "./home.module.scss";
 import { WorkingExperience } from "../../components/workingExperience/workingExperience";
-import PDF from "../../assets/PDF/Evie-Perren.pdf";
+import PDF from "../../assets/PDF/Evie_Perren.pdf";
 
 export const Home = () => {
   return (
