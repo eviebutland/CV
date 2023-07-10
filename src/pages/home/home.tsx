@@ -42,15 +42,32 @@ export const Home = () => {
             imageOnHover={biteemojiHobbiesTwo}
           />
         </section>
+
+        <h3 className={styles.cv} id="workWithMe">
+          Work with me
+        </h3>
+
+        <div className={styles.flex}>
+          <a href="https://www.upwork.com/en-gb/freelancers/~01a96055abeb6a11f5">
+            Upwork
+          </a>
+
+          <br />
+          <a href="https://www.peopleperhour.com/freelancer/evie-perren-skilled-front-end-software-zaaawzjn">
+            PeoplePerHour
+          </a>
+          <br />
+
+          <a href="https://www.fiverr.com/evieperren">Fiverr</a>
+        </div>
+
         <CardWrapper></CardWrapper>
         <Timeline />
-
         <div className={styles.cv}>
           <a href={PDF} target="_blank" rel="noopener noreferrer">
             View PDF CV
           </a>
         </div>
-
         <WorkingExperience></WorkingExperience>
       </section>
       <Footer />

@@ -19,7 +19,7 @@ export const Header = () => {
       <h1>Hello</h1>
       <h2>I am Evie, a Fullstack Software Engineer</h2>
       <div className={styles.button_container}>
-        <Button location="#aboutMe" text="About me" design="full" />
+        <Button location="#workWithMe" text="Work with me" design="full" />
         <Button location="#projects" text="Projects" design="full" />
 
         <Button
