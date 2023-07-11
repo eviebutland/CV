@@ -3,6 +3,7 @@
 .footer {
   border-top: 1px solid $copy-light;
   padding-top: 10px;
+
   
   @media screen and (min-width: 768px) {
     display: flex;
@@ -20,6 +21,7 @@
     padding: 0;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
 
     .first {

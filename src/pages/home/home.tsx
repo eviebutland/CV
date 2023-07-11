@@ -11,6 +11,10 @@ import biteemojiHobbiesTwo from "../../assets/images/working-bitemoji.png";
 import styles from "./home.module.scss";
 import { WorkingExperience } from "../../components/workingExperience/workingExperience";
 import PDF from "../../assets/PDF/Evie_Perren.pdf";
+import upwork from "../../assets/images/upwork.png";
+import peopleperhour from "../../assets/images/peopleperhour.png";
+import fiverr from "../../assets/images/Fiverr-Logo.png";
+import freelancer from "../../assets/images/freelancer.jpeg";
 
 export const Home = () => {
   return (
@@ -29,6 +33,7 @@ export const Home = () => {
             id="aboutMe"
             imageOnHover={bitemojiTwo}
           />
+
           <Card
             title="My hobbies and interests"
             image={bitemojiHobbies}
@@ -43,22 +48,34 @@ export const Home = () => {
           />
         </section>
 
-        <h3 className={styles.cv} id="workWithMe">
-          Work with me
-        </h3>
-
-        <div className={styles.flex}>
+        <div className={styles.flex} id="workWithMe">
           <a href="https://www.upwork.com/en-gb/freelancers/~01a96055abeb6a11f5">
-            Upwork
+            <img
+              className={styles.upwork_logo}
+              src={upwork}
+              alt="upwork logo"
+            />
           </a>
 
-          <br />
           <a href="https://www.peopleperhour.com/freelancer/evie-perren-skilled-front-end-software-zaaawzjn">
-            PeoplePerHour
+            <img
+              className={styles.peopleperhour}
+              src={peopleperhour}
+              alt="peopleperhour logo"
+            />
           </a>
-          <br />
 
-          <a href="https://www.fiverr.com/evieperren">Fiverr</a>
+          <a href="https://www.fiverr.com/evieperren">
+            <img className={styles.fiverr} src={fiverr} alt="fiverr logo" />
+          </a>
+
+          <a href="https://www.freelancer.com/u/EvieButland">
+            <img
+              className={styles.freelancer}
+              src={freelancer}
+              alt="Freelancer logo"
+            />
+          </a>
         </div>
 
         <CardWrapper></CardWrapper>
