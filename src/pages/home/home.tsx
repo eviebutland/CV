@@ -34,7 +34,7 @@ import {
   faServer,
   faT,
 } from "@fortawesome/free-solid-svg-icons";
-
+import { Tooltip } from "../../components/tooltip/tooltip";
 export const Home = () => {
   const [articles, setArticles] = useState([]);
 
@@ -87,7 +87,19 @@ export const Home = () => {
         <Header />
 
         <div className="flex rounded-xl justify-around p-6 mt-6">
-          <FontAwesomeIcon icon={faGithub} className="h-[60px]" />
+          {/* TODO MAKE LINKS WITH TOOLTIPS */}
+          <Tooltip>
+            <div>
+              <span className="tooltip">Github</span>
+              <a
+                href="https://github.com/eviebutland"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithub} className="h-[60px]" />
+              </a>
+            </div>
+          </Tooltip>
           <FontAwesomeIcon icon={faFilePdf} className="h-[60px]" />
           <FontAwesomeIcon icon={faMedium} className="h-[60px]" />
           <FontAwesomeIcon icon={faLinkedin} className="h-[60px]" />
