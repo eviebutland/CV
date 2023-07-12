@@ -3,7 +3,7 @@ import styles from "./workingExperience.module.scss";
 export const WorkingExperience = () => {
   return (
     <section id="working-experience" className={styles.container}>
-      <h2 className={styles.title}>Working experience</h2>
+      <h2 className={styles.title}>Working Experience</h2>
       <ul>
         <li className={styles.list_item}>
           <div className={styles.company}>
@@ -30,7 +30,7 @@ export const WorkingExperience = () => {
             <p>2021-2022</p>
           </div>
           <div className={styles.role}>
-            <h3>Fullstack Software developer</h3>
+            <h3>Fullstack Software Developer</h3>
             <p>
               In order to expand my knowledge, I joined the Argi-Tech SAAS start
               up in September 2021. In this role, I learnt to work at a fast
@@ -48,7 +48,7 @@ export const WorkingExperience = () => {
             <p>2020-2021</p>
           </div>
           <div className={styles.role}>
-            <h3>Junior software developer</h3>
+            <h3>Junior Software Developer</h3>
             <p>
               Following the completion of my apprenticeship, I became a Junior
               Software developer. This role entails converting requirements from
@@ -69,7 +69,7 @@ export const WorkingExperience = () => {
             <p>2019-2020</p>
           </div>
           <div className={styles.role}>
-            <h3>Apprentice software developer</h3>
+            <h3>Apprentice Software Developer</h3>
             <p>
               I completed my apprenticeship with Firebrand in September 2020,
               following 2 exams (MTA Database Fundamentals, MTHTML5 Microsoft
@@ -103,41 +103,13 @@ export const WorkingExperience = () => {
             <p>2017-2019</p>
           </div>
           <div className={styles.role}>
-            <h3>Customer Service advisor</h3>
+            <h3>Customer Service Advisor</h3>
             <p>
               As a Contact Advisor, I spoke to customers over the phone,
               LiveChat and email to deal with their complex queries. My role was
               to understand their concerns with their product and establish a
               satisfactory outcome. This required organisation, working to
               resolve issues swiftly and in alignment with our regulations.{" "}
-            </p>
-          </div>
-        </li>
-        <li className={styles.list_item}>
-          <div className={styles.company}>
-            <h3>Sainsbury's</h3>
-            <p>2016-2017</p>
-          </div>
-          <div className={styles.role}>
-            <h3>Customer Service assistant</h3>
-            <p>
-              At Sainsbury’s, I developed further relationship skills by serving
-              customers and representing the company. I take being a face of the
-              business seriously.
-            </p>
-          </div>
-        </li>
-        <li className={styles.list_item}>
-          <div className={styles.company}>
-            <h3>Sports Direct</h3>
-            <p>2015-2016</p>
-          </div>
-          <div className={styles.role}>
-            <h3>Customer Service assistant</h3>
-            <p>
-              This required face-to-face interactions with customers assisting
-              them with their queries and seeking resolution. Being customer
-              facing, I was polite and respectful.
             </p>
           </div>
         </li>
