@@ -32,6 +32,7 @@ export const Home = () => {
     <Fragment>
       <Header />
 
+      <div className="flex bg-secondary rounded-lg">here</div>
       {/* {articles} */}
       <section className={styles.content}>
         <section className={styles.cards}>

@@ -15,7 +15,7 @@ export const Layout = () => {
   return (
     <Router>
       <Navigation />
-      <main>
+      <main className="mx-5 md:mx-15 lg:mx-20">
         <Switch>
           <Route exact path="/">
             <Home />
