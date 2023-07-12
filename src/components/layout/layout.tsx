@@ -10,12 +10,12 @@ import NotFound from "../../pages/404/notFound";
 import InventoryPlatform from "../../pages/projects/inventory/inventory";
 import MovieLibrary from "../../pages/projects/movieLibrary/movieLibrary";
 import FitnessApp from "../../pages/projects/fitnessApp/fitnessApp";
-
+// import styling from "../../../public/index.css";
 export const Layout = () => {
   return (
     <Router>
       <Navigation />
-      <main className={styles.container}>
+      <main>
         <Switch>
           <Route exact path="/">
             <Home />

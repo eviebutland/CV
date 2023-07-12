@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+    @apply font-bold;
+    font-size: 60px;
+    color:#2C363E;
+}
+
+h2 {
+    @apply font-bold;
+    font-size: 50px;
+    color:#2C363E;
+}
+
+h3 {
+    @apply font-bold;
+    font-size: 40px;
+    color:#2C363E;
+}

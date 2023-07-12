@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { Header } from "../../components/header/header";
 import { CardWrapper } from "../../components/cardWrapper/cardWrapper";
 import { Timeline } from "../../components/timeline/timeline";
@@ -15,11 +15,24 @@ import upwork from "../../assets/images/upwork.png";
 import peopleperhour from "../../assets/images/peopleperhour.png";
 import fiverr from "../../assets/images/Fiverr-Logo.png";
 import freelancer from "../../assets/images/freelancer.jpeg";
+import { fetchMediumArtices } from "../../service/medium";
 
 export const Home = () => {
+  const [articles, setArticles] = useState([]);
+
+  async function onLoad() {
+    if (articles.length < 1) {
+      const fetched = await fetchMediumArtices();
+      setArticles(fetched);
+    }
+  }
+
+  // onLoad();
   return (
     <Fragment>
       <Header />
+
+      {/* {articles} */}
       <section className={styles.content}>
         <section className={styles.cards}>
           <Card
