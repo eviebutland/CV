@@ -1,14 +1,8 @@
 import { Fragment, useState } from "react";
 import { Header } from "../../components/header/header";
-import { CardWrapper } from "../../components/cardWrapper/cardWrapper";
 import { Timeline } from "../../components/timeline/timeline";
-import { Card } from "../../components/card/card";
+
 import { Footer } from "../../components/footer/footer";
-import bitemoji from "../../assets/images/about-me-bitemoji.png";
-import bitemojiTwo from "../../assets/images/about-me-two.png";
-import bitemojiHobbies from "../../assets/images/hobbies.png";
-import biteemojiHobbiesTwo from "../../assets/images/working-bitemoji.png";
-import styles from "./home.module.scss";
 import { WorkingExperience } from "../../components/workingExperience/workingExperience";
 import PDF from "../../assets/PDF/Evie_Perren.pdf";
 import upwork from "../../assets/images/upwork.png";
@@ -18,22 +12,14 @@ import freelancer from "../../assets/images/freelancer.jpeg";
 import { fetchMediumArtices } from "../../service/medium";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faCss3Alt,
   faGithub,
-  faJsSquare,
   faLinkedin,
   faMedium,
-  faReact,
-  faVuejs,
 } from "@fortawesome/free-brands-svg-icons";
+import { icons } from "./icons";
 import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
 import { IconGrid } from "../../components/IconGrid";
-import {
-  faBroadcastTower,
-  faCloud,
-  faServer,
-  faT,
-} from "@fortawesome/free-solid-svg-icons";
+
 import { Tooltip } from "../../components/tooltip/tooltip";
 export const Home = () => {
   const [articles, setArticles] = useState([]);
@@ -45,41 +31,6 @@ export const Home = () => {
     }
   }
 
-  const icons = [
-    {
-      label: "React",
-      value: faReact,
-    },
-    {
-      label: "Vue",
-      value: faVuejs,
-    },
-    {
-      label: "Typescript",
-      value: faT,
-    },
-    {
-      label: "CSS",
-      value: faCss3Alt,
-    },
-    {
-      label: "Express JS",
-      value: faJsSquare,
-    },
-    {
-      label: "Mongoose",
-      value: faServer,
-    },
-    {
-      label: "MongoDB",
-      value: faCloud,
-    },
-    // {
-    //   label: "Nuxt JS",
-    //   value: faBrowser,
-    // },
-  ];
-
   // onLoad();
   return (
     <Fragment>
@@ -87,65 +38,95 @@ export const Home = () => {
         <Header />
 
         <div className="flex rounded-xl justify-around p-6 mt-6">
-          {/* TODO MAKE LINKS WITH TOOLTIPS */}
-          <Tooltip>
-            <div>
-              <span className="tooltip">Github</span>
+          <Tooltip label="Github">
+            <a
+              href="https://github.com/eviebutland"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="h-[40px] lg:h-[60px]"
+              />
+            </a>
+          </Tooltip>
+          <Tooltip label="CV">
+            <a href={PDF} target="_blank" rel="noreferrer">
+              <FontAwesomeIcon
+                icon={faFilePdf}
+                className="h-[40px] lg:h-[60px]"
+              />
+            </a>
+          </Tooltip>
+
+          <Tooltip label="Medium">
+            <a
+              href="https://medium.com/@evie.butland"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faMedium}
+                className="h-[40px] lg:h-[60px]"
+              />
+            </a>
+          </Tooltip>
+          <Tooltip label="LinkedIn">
+            <a
+              href="https://www.linkedin.com/in/evie-butland-432a33170/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className="h-[40px] lg:h-[60px]"
+              />
+            </a>
+          </Tooltip>
+        </div>
+      </div>
+
+      <div className="bg-primary mt-[50px] lg:mt-[100px] px-[20px] py-12 lg:p-[100px]">
+        <div className="max-w-[1250px] m-auto flex-col-reverse lg:flex-row flex justify-between">
+          <div className="">
+            <div className="pt-10 lg:pt-0">
+              <h2 className="headline-1 text-center md:text-left">Skillset</h2>
+              <hr className="border-gray-800 hidden lg:block border-b w-[20%] mt-2" />
+            </div>
+            <p className=" lg:pb-0 lg:max-w-[80%] mt-10">
+              As a self-taught developer, I built my knowledge in my free-time
+              on tech stacks that interest me and have been used within my
+              roles.
+              <br />
+              <br />I continue to learn everyday & enjoy staying up to date with
+              the latest tech. I also write about these on{" "}
               <a
-                href="https://github.com/eviebutland"
+                href="https://medium.com/@evie.butland"
                 target="_blank"
                 rel="noreferrer"
+                className=" underline"
               >
-                <FontAwesomeIcon icon={faGithub} className="h-[60px]" />
+                Medium
               </a>
-            </div>
-          </Tooltip>
-          <FontAwesomeIcon icon={faFilePdf} className="h-[60px]" />
-          <FontAwesomeIcon icon={faMedium} className="h-[60px]" />
-          <FontAwesomeIcon icon={faLinkedin} className="h-[60px]" />
+              .
+            </p>
+          </div>
+          <div className="w-full flex justify-center">
+            <IconGrid icons={icons} />
+          </div>
         </div>
       </div>
 
-      <div className="bg-primary mt-10 flex">
-        <div>
-          <h2>Skillset</h2>
-          <hr className="text-gray border-b w-3 h-1" />
-        </div>
-        <IconGrid icons={icons} />
-      </div>
+      <section className="max-w-[1250px] md:mx-[100px] lg:mx-auto  mb-10 md:mb-30">
+        <Timeline />
 
-      <section className={styles.content}>
-        <section className={styles.cards}>
-          <Card
-            title="About me"
-            image={bitemoji}
-            altText="Bitemoji of me"
-            content="I am Fullstack Software Engineer based in Hampshire, UK. With a strong passion for problem solving and over 4 years experience, I have learnt build maintainable features to complex challenges to a high quality, following best practices and delivering within the required deadline. 
-            I thrive working in a fast paced environment with opportunity to grow and strength my skills. Currently working at an Argi-tech SAAS start-up, bringing data-led innovations for post production supply chains."
-            type="Card"
-            imagePosition="Left"
-            id="aboutMe"
-            imageOnHover={bitemojiTwo}
-          />
-
-          <Card
-            title="My hobbies and interests"
-            image={bitemojiHobbies}
-            altText="Hobbies and interests bitemoji"
-            content="I have a passion for creating simple solutions to complex problems and contributing my knowledge to help a company succeed. In my free time I love to learn new technologies, read and travel. 
-            My current side project I am using to gain knowledge is creating a Fitness App. From the ground up, I have built multiple API's, maintain a Postgres database and building an easy-to-use UI.
-           "
-            type="Card"
-            imagePosition="Right"
-            id="hobbies-interests"
-            imageOnHover={biteemojiHobbiesTwo}
-          />
-        </section>
-
-        <div className={styles.flex} id="workWithMe">
+        <div
+          className="flex space-y-4 py-20 md:space-y-0 md:space-x-5 lg:space-x-10 flex-col md:flex-row md:px-[100px] justify-center items-center md:items-baseline mb-30"
+          id="workWithMe"
+        >
           <a href="https://www.upwork.com/en-gb/freelancers/~01a96055abeb6a11f5">
             <img
-              className={styles.upwork_logo}
+              className="h-8 md:h-12 lg:h-14"
               src={upwork}
               alt="upwork logo"
             />
@@ -153,32 +134,29 @@ export const Home = () => {
 
           <a href="https://www.peopleperhour.com/freelancer/evie-perren-skilled-front-end-software-zaaawzjn">
             <img
-              className={styles.peopleperhour}
+              className="h-8 md:h-12 lg:h-14"
               src={peopleperhour}
               alt="peopleperhour logo"
             />
           </a>
 
           <a href="https://www.fiverr.com/evieperren">
-            <img className={styles.fiverr} src={fiverr} alt="fiverr logo" />
+            <img
+              className="h-8 md:h-12 lg:h-20"
+              src={fiverr}
+              alt="fiverr logo"
+            />
           </a>
 
           <a href="https://www.freelancer.com/u/EvieButland">
             <img
-              className={styles.freelancer}
+              className="h-8 md:h-12 lg:h-20"
               src={freelancer}
               alt="Freelancer logo"
             />
           </a>
         </div>
 
-        <CardWrapper></CardWrapper>
-        <Timeline />
-        <div className={styles.cv}>
-          <a href={PDF} target="_blank" rel="noopener noreferrer">
-            View PDF CV
-          </a>
-        </div>
         <WorkingExperience></WorkingExperience>
       </section>
       <Footer />

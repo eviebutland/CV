@@ -1,16 +1,11 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./tooltip.css";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-export const Tooltip = (props: { children?: JSX.Element }) => {
+export const Tooltip = (props: { children?: JSX.Element; label: string }) => {
   return (
     <ul className="wrapper">
-      <li className="icon github">
+      <li className="icon">
+        <span className="tooltip">{props.label}</span>
         {props.children}
-        {/* <span className="tooltip">Github</span>
-        <span>
-          <FontAwesomeIcon icon={faGithub} />
-        </span> */}
       </li>
     </ul>
   );
