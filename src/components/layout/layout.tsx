@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "../../pages/home/home";
 import { Navigation } from "../navigation/navigation";
-import styles from "./layout.module.scss";
 
 import OrangeDriverTraining from "../../pages/projects/orangeDriverTraining/orangeDriverTraining";
 import HrMentorApp from "../../pages/projects/hrMentorApp/hrMentorApp";
@@ -10,12 +9,12 @@ import NotFound from "../../pages/404/notFound";
 import InventoryPlatform from "../../pages/projects/inventory/inventory";
 import MovieLibrary from "../../pages/projects/movieLibrary/movieLibrary";
 import FitnessApp from "../../pages/projects/fitnessApp/fitnessApp";
-// import styling from "../../../public/index.css";
+
 export const Layout = () => {
   return (
     <Router>
       <Navigation />
-      <main className="mx-5 md:mx-15 lg:mx-20">
+      <main>
         <Switch>
           <Route exact path="/">
             <Home />

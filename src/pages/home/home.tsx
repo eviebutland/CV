@@ -16,6 +16,24 @@ import peopleperhour from "../../assets/images/peopleperhour.png";
 import fiverr from "../../assets/images/Fiverr-Logo.png";
 import freelancer from "../../assets/images/freelancer.jpeg";
 import { fetchMediumArtices } from "../../service/medium";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCss3Alt,
+  faGithub,
+  faJsSquare,
+  faLinkedin,
+  faMedium,
+  faReact,
+  faVuejs,
+} from "@fortawesome/free-brands-svg-icons";
+import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
+import { IconGrid } from "../../components/IconGrid";
+import {
+  faBroadcastTower,
+  faCloud,
+  faServer,
+  faT,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const Home = () => {
   const [articles, setArticles] = useState([]);
@@ -27,13 +45,63 @@ export const Home = () => {
     }
   }
 
+  const icons = [
+    {
+      label: "React",
+      value: faReact,
+    },
+    {
+      label: "Vue",
+      value: faVuejs,
+    },
+    {
+      label: "Typescript",
+      value: faT,
+    },
+    {
+      label: "CSS",
+      value: faCss3Alt,
+    },
+    {
+      label: "Express JS",
+      value: faJsSquare,
+    },
+    {
+      label: "Mongoose",
+      value: faServer,
+    },
+    {
+      label: "MongoDB",
+      value: faCloud,
+    },
+    // {
+    //   label: "Nuxt JS",
+    //   value: faBrowser,
+    // },
+  ];
+
   // onLoad();
   return (
     <Fragment>
-      <Header />
+      <div className="mx-5 md:mx-15 lg:mx-20">
+        <Header />
 
-      <div className="flex bg-secondary rounded-lg">here</div>
-      {/* {articles} */}
+        <div className="flex rounded-xl justify-around p-6 mt-6">
+          <FontAwesomeIcon icon={faGithub} className="h-[60px]" />
+          <FontAwesomeIcon icon={faFilePdf} className="h-[60px]" />
+          <FontAwesomeIcon icon={faMedium} className="h-[60px]" />
+          <FontAwesomeIcon icon={faLinkedin} className="h-[60px]" />
+        </div>
+      </div>
+
+      <div className="bg-primary mt-10 flex">
+        <div>
+          <h2>Skillset</h2>
+          <hr className="text-gray border-b w-3 h-1" />
+        </div>
+        <IconGrid icons={icons} />
+      </div>
+
       <section className={styles.content}>
         <section className={styles.cards}>
           <Card
