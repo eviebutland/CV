@@ -2,12 +2,12 @@ export const Timeline = () => {
   const yearsExperience = new Date().getFullYear() - 2019;
 
   return (
-    <div className="my-16 md:my-24 md:flex md:items-center" id="about">
-      <div className="pr-6">
-        <h2 className="feature text-center">
+    <div className='my-16 md:my-24 md:flex md:items-center' id='about'>
+      <div className='pr-6'>
+        <h2 className='feature text-center'>
           2018
-          <br className="hidden md:block" />
-          <span className="inline-block md:hidden">-</span>
+          <br className='hidden md:block' />
+          <span className='inline-block md:hidden'>-</span>
           {new Date().getFullYear()}
         </h2>
       </div>

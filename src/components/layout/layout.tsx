@@ -1,14 +1,14 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home } from "../../pages/home/home";
-import { Navigation } from "../navigation/navigation";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Home } from '../../pages/home/home';
+import { Navigation } from '../navigation/navigation';
 
-import OrangeDriverTraining from "../../pages/projects/orangeDriverTraining/orangeDriverTraining";
-import HrMentorApp from "../../pages/projects/hrMentorApp/hrMentorApp";
-import PathToPurchase from "../../pages/projects/pathToPurchase/pathToPurchase";
-import NotFound from "../../pages/404/notFound";
-import InventoryPlatform from "../../pages/projects/inventory/inventory";
-import MovieLibrary from "../../pages/projects/movieLibrary/movieLibrary";
-import FitnessApp from "../../pages/projects/fitnessApp/fitnessApp";
+import OrangeDriverTraining from '../../pages/projects/orangeDriverTraining';
+import HrMentorApp from '../../pages/projects/hrMentorApp';
+import PathToPurchase from '../../pages/projects/pathToPurchase';
+import NotFound from '../../pages/404/notFound';
+import InventoryPlatform from '../../pages/projects/inventory';
+import MovieLibrary from '../../pages/projects/movieLibrary';
+import FitnessApp from '../../pages/projects/fitnessApp';
 
 export const Layout = () => {
   return (

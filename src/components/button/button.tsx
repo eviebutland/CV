@@ -1,7 +1,6 @@
-import { ReactEventHandler } from "react";
-import cs from "classnames";
+import { ReactEventHandler } from 'react';
 
-export type StyleProps = "full" | "outline";
+export type StyleProps = 'full' | 'outline';
 
 interface ButtonProps {
   text: string;
@@ -9,6 +8,7 @@ interface ButtonProps {
   design: StyleProps;
   location: string;
   target?: string;
+  priority?: string;
 }
 export const Button = (props: ButtonProps) => {
   const { onClick, text, design, location, target } = props;
@@ -17,7 +17,16 @@ export const Button = (props: ButtonProps) => {
       href={location}
       onClick={onClick}
       target={target}
-      className={cs("button", design === "full" ? "full" : "outline")}
+      className={`
+        p-4 rounded border-transparent min-w-[100px] my-0 mx-2 text-center 
+        ${
+          design === 'full'
+            ? 'border-primary hover:bg-white'
+            : 'border-primary bg-transparent hover:bg-primary'
+        } 
+        ${props.priority === 'primary' ? 'bg-primary' : ''}
+        
+      `}
     >
       {text}
     </a>

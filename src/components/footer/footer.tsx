@@ -1,9 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export const Footer = () => {
   return (
-    <footer className="mx-5 md:mx-15 lg:mx-20 mb-5 md:mb-10">
+    <footer className="mx-5 md:mx-15 lg:mx-20 mb-5 md:my-10">
       <div className="border-t pt-3 md:flex md:justify-between">
         <ul className="md:justify-start mb-3 p-0 flex items-center flex-wrap space-x-3">
           <li>
