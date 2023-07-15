@@ -1,35 +1,35 @@
-import { Fragment, useState } from "react";
-import { Header } from "../../components/header/header";
-import { Timeline } from "../../components/timeline/timeline";
+import { Fragment } from 'react';
+import { Header } from '../../components/header/header';
+import { Timeline } from '../../components/timeline/timeline';
 
-import { Footer } from "../../components/footer/footer";
-import { WorkingExperience } from "../../components/workingExperience/workingExperience";
-import PDF from "../../assets/PDF/Evie_Perren.pdf";
-import upwork from "../../assets/images/upwork.png";
-import peopleperhour from "../../assets/images/peopleperhour.png";
-import fiverr from "../../assets/images/Fiverr-Logo.png";
-import freelancer from "../../assets/images/freelancer.jpeg";
-import { fetchMediumArtices } from "../../service/medium";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Footer } from '../../components/footer/footer';
+import { WorkingExperience } from '../../components/workingExperience/workingExperience';
+import PDF from '../../assets/PDF/Evie_Perren.pdf';
+import upwork from '../../assets/images/upwork.png';
+import peopleperhour from '../../assets/images/peopleperhour.png';
+import fiverr from '../../assets/images/Fiverr-Logo.png';
+import freelancer from '../../assets/images/freelancer.jpeg';
+// import { fetchMediumArtices } from '../../service/medium';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faGithub,
   faLinkedin,
   faMedium,
-} from "@fortawesome/free-brands-svg-icons";
-import { icons } from "./icons";
-import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
-import { IconGrid } from "../../components/IconGrid";
+} from '@fortawesome/free-brands-svg-icons';
+import { icons } from './icons';
+import { faFilePdf } from '@fortawesome/free-regular-svg-icons';
+import { IconGrid } from '../../components/IconGrid';
 
-import { Tooltip } from "../../components/tooltip/tooltip";
+import { Tooltip } from '../../components/tooltip/tooltip';
 export const Home = () => {
-  const [articles, setArticles] = useState([]);
+  // const [articles, setArticles] = useState([]);
 
-  async function onLoad() {
-    if (articles.length < 1) {
-      const fetched = await fetchMediumArtices();
-      setArticles(fetched);
-    }
-  }
+  // async function onLoad() {
+  //   if (articles.length < 1) {
+  //     const fetched = await fetchMediumArtices();
+  //     setArticles(fetched);
+  //   }
+  // }
 
   // onLoad();
   return (
@@ -99,7 +99,7 @@ export const Home = () => {
               roles.
               <br />
               <br />I continue to learn everyday & enjoy staying up to date with
-              the latest tech. I also write about these on{" "}
+              the latest tech. I also write about these on{' '}
               <a
                 href="https://medium.com/@evie.butland"
                 target="_blank"
