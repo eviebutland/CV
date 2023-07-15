@@ -1,28 +1,27 @@
-import styles from "./list.module.scss"
-
 interface ListProps {
-  title: string
-  tags: string[]
-  useHash: boolean
+  title: string;
+  tags: string[];
+  useHash: boolean;
 }
 
 export const List = (props: ListProps) => {
-  const { title, tags, useHash } = props
+  const { title, tags, useHash } = props;
   return (
-    <section className={styles.container}>
-      <div className={styles.title_container}>
-        <h2 className={styles.title}>{title}</h2>
+    <section>
+      <div>
+        <h2 className="text-center">{title}</h2>
       </div>
-      <ul>
-        {tags.map((item, key) => <li key={key}>
-          <p>
-            {useHash && (
-              <span>#</span>
-            )}
-            {item}
-          </p>
-        </li>)}
+
+      <ul className="max-w-[800px] my-0 mx-auto text-center p-0">
+        {tags.map((item, key) => (
+          <li key={key} className="inline-block list-none py-0 px-2">
+            <p className="my-1 mx-0 md:m-2">
+              {useHash && <span>#</span>}
+              {item}
+            </p>
+          </li>
+        ))}
       </ul>
     </section>
-  )
-}
+  );
+};

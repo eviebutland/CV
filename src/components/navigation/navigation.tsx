@@ -1,71 +1,77 @@
-import { useState } from 'react'
-import styles from './navigation.module.scss'
-import menuIcon from '../../assets/svg/bars-solid.svg'
-import closeIcon from '../../assets/svg/times-solid.svg'
-import cs from 'classnames'
-import homeIcon from "../../assets/images/home-bitemoji.png"
-import { projects } from '../../projects/projects'
-import { Link } from 'react-router-dom'
+import { useState } from 'react';
+
+import cs from 'classnames';
+import homeIcon from '../../assets/images/home-bitemoji.png';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export const Navigation = () => {
-  const [ isDisplayingMenu, setIsDisplayingMenu ] = useState(false)
-  const [ isDisplayingDropdown, setIsDisplayingDropdown ] = useState(false)
-
-  const handleDisplayDropdown = () => {
-    setIsDisplayingDropdown(true)
-  }
-  const handleHideDropdown = () => {
-    setIsDisplayingDropdown(false)
-  }
+  const [isDisplayingMenu, setIsDisplayingMenu] = useState(false);
 
   return (
-    <header className={cs(styles.container, isDisplayingMenu && styles.displayContainer)}>
-      <div className={styles.top_container}>
-        <a href="/" className={styles.home}>
-          <img src={homeIcon} alt="Home"/> <strong>Evie Perren</strong>
+    <header
+      className={cs(
+        'py-2 px-0 lg:flex justify-between',
+        isDisplayingMenu &&
+          'block fixed top-0 w-full h-full bg-white z-50 lg:hidden lg:relative'
+      )}
+    >
+      <div className="flex justify-between w-full m-auto">
+        <a href="/" className="flex space-x-2 items-center">
+          <img src={homeIcon} alt="Home" className="max-w-[30px]" />
+          <strong>Evie Perren</strong>
         </a>
-        <div className={styles.button_container}>
-          <button 
-            onClick={() => 
-              setIsDisplayingMenu(!isDisplayingMenu)
-            } 
-            className={styles.menu_button}
-          >
+
+        <div className="inline-flex flex-end lg:hidden mr-5 md:mr-10">
+          <button onClick={() => setIsDisplayingMenu(!isDisplayingMenu)}>
             {isDisplayingMenu ? (
-              <img src={closeIcon} alt="close menu"/>
+              <div>
+                <p className="sr-only">Close menu</p>
+                <FontAwesomeIcon icon={faTimes} />
+              </div>
             ) : (
-              <img src={menuIcon} alt="open menu"/>
+              <div>
+                <p className="sr-only">Open menu</p>
+                <FontAwesomeIcon icon={faBars} />
+              </div>
             )}
           </button>
         </div>
       </div>
-       
-      <nav className={isDisplayingMenu ? styles.display : styles.hide} onClick={() => 
-        setIsDisplayingMenu(false)
-      }>
-        <ul>
-          <li onMouseOver={handleHideDropdown}>
-            <a href="/#hobbies-interests">Hobbies and interests</a>
+
+      <nav
+        className={
+          isDisplayingMenu
+            ? 'justify-between items-center p-4'
+            : 'hidden lg:flex'
+        }
+        onClick={() => setIsDisplayingMenu(false)}
+      >
+        <ul className="space-y-2 lg:space-y-0 lg:flex justify-end w-full lg:space-x-6 mr-10 mt-2 lg:min-w-[400px]">
+          <li>
+            <a href="/#about" className="hover:underline hover:text-gray-600">
+              About
+            </a>
           </li>
-          <li className={styles.hasDropdown} onClick={handleDisplayDropdown} onMouseOver={handleDisplayDropdown} >
-            <p>Projects</p>
-            <div className={cs(styles.dropdown, !isDisplayingDropdown && styles.hideDropdown)} onMouseLeave={handleHideDropdown}>
-              <ul>
-                <li>
-                  <a href="/#projects">List of projects</a>
-                </li>
-                {Object.entries(projects).map((name, item) => <li key={item}>
-                  <Link to={name[1].internalLink}>{name[1].name}</Link>
-                  </li>
-                )}
-              </ul>
-            </div>
+          <li>
+            <Link
+              to="all-projects"
+              className="hover:underline hover:text-gray-600"
+            >
+              Projects
+            </Link>
           </li>
-          <li onMouseOver={handleHideDropdown}>
-            <a href="/#working-experience">Working Experience</a>
+          <li>
+            <a
+              href="/#working-experience"
+              className="hover:underline hover:text-gray-600"
+            >
+              Working Experience
+            </a>
           </li>
         </ul>
       </nav>
     </header>
-  )
-}
+  );
+};

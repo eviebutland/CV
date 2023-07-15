@@ -1,12 +1,13 @@
-import styles from "./back.module.scss"
-import chevron from "../../assets/svg/chevron-left-solid.svg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 export const Back = () => {
   return (
-    <div className={styles.container}>
-      <a href="/">
-        <img src={chevron} alt="Back button"/>
-        Back</a>
+    <div className="flex items-center p-10">
+      <a href="/" className="hover:text-gray-500">
+        <FontAwesomeIcon icon={faChevronLeft} />
+        <span className="pl-2 font-bold ">Back</span>
+      </a>
     </div>
-  )
-}
+  );
+};

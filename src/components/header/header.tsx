@@ -1,39 +1,22 @@
-import { Button } from "../button/button";
-import styles from "./header.module.scss";
-import bitemoji from "../../assets/images/image-of-me.png";
-import bitemojiHover from "../../assets/images/image-of-me-two.png";
-import { useState } from "react";
+import me from '../../assets/svg/me.svg';
 
 export const Header = () => {
-  const [image, setImage] = useState(bitemoji);
+  const yearsExperience = new Date().getFullYear() - 2019;
+
   return (
-    <section className={styles.container}>
-      <div>
-        <img
-          src={image}
-          alt="bitemoji of me"
-          onMouseOver={() => setImage(bitemojiHover)}
-          onMouseLeave={() => setImage(bitemoji)}
-        />
+    <section className="flex flex-col-reverse md:flex-row  md:my-20 md:justify-center items-center">
+      <div className="mt-10 md:mt-0 text-center md:text-left">
+        <h1>Hi, I'm Evie</h1>
+        <p className="headline-1 max-w-[700px] !p-0">
+          Front-End Software Engineer
+        </p>
+        <p className="mt-10 max-w-[700px] pr-3">
+          Over {yearsExperience} years experience working with Front-end
+          technologies. Currently working at an Argi-tech SAAS start-up,
+          bringing data-led innovations for post production supply chains.
+        </p>
       </div>
-      <h1>Hello</h1>
-      <h2>I am Evie, a Fullstack Software Engineer</h2>
-      <div className={styles.button_container}>
-        <Button location="#workWithMe" text="Services" design="full" />
-        <Button location="#projects" text="Projects" design="full" />
-        <Button
-          location="https://medium.com/@evie.butland"
-          text="Medium"
-          design="full"
-          target="_blank"
-        />
-        <Button
-          location="https://github.com/eviebutland"
-          text="Github"
-          design="full"
-          target="_blank"
-        />
-      </div>
+      <img src={me} alt="me" className="w-[150px] md:w-[300px] lg:w-auto" />
     </section>
   );
 };
