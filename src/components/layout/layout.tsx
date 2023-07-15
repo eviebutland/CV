@@ -14,7 +14,7 @@ export const Layout = () => {
   return (
     <Router>
       <Navigation />
-      <main>
+      <main className="cursor">
         <Switch>
           <Route exact path="/">
             <Home />
