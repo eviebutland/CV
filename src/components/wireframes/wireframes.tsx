@@ -1,5 +1,4 @@
 import { ReactChild } from 'react';
-import styles from './wireframes.module.scss';
 
 interface imageArrayProps {
   image: string;
@@ -14,12 +13,16 @@ interface WireframeProps {
 export const Wireframes = (props: WireframeProps) => {
   const { title, imageArray, children } = props;
   return (
-    <section className={styles.container}>
+    <section className="text-center">
       <h2>{title}</h2>
-      <div className={styles.card_container}>
+      <div className="block md:flex md:justify-center md:items-center md:max-w-[700px] md:flex-wrap md:my-0 md:mx-auto xl:max-w-[1100px]">
         {imageArray.map((image, key) => (
-          <div key={key}>
-            <img src={image.image} alt={image.alt} />
+          <div key={key} className="p-1">
+            <img
+              className="max-w-[170px] block xl:max-w-[200px]"
+              src={image.image}
+              alt={image.alt}
+            />
           </div>
         ))}
       </div>
