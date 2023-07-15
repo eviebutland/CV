@@ -1,4 +1,4 @@
-import { experience } from "./experience";
+import { experience } from './experience';
 export const WorkingExperience = () => {
   return (
     <section id="working-experience" className="mt-12 lg:mt-[100px]">

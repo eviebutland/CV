@@ -12,12 +12,12 @@ export const Navigation = () => {
   return (
     <header
       className={cs(
-        'py-2 px-0 flex justify-between',
+        'py-2 px-0 lg:flex justify-between',
         isDisplayingMenu &&
-          'block fixed w-full h-full bg-white z-50 lg:hidden lg:relative'
+          'block fixed top-0 w-full h-full bg-white z-50 lg:hidden lg:relative'
       )}
     >
-      <div className="flex justify-between w-full md:w-auto">
+      <div className="flex justify-between w-full m-auto">
         <a href="/" className="flex space-x-2 items-center">
           <img src={homeIcon} alt="Home" className="max-w-[30px]" />
           <strong>Evie Perren</strong>
@@ -48,7 +48,7 @@ export const Navigation = () => {
         }
         onClick={() => setIsDisplayingMenu(false)}
       >
-        <ul className="space-y-2 lg:space-y-0 lg:flex justify-end w-full lg:space-x-6 mr-10 mt-2">
+        <ul className="space-y-2 lg:space-y-0 lg:flex justify-end w-full lg:space-x-6 mr-10 mt-2 lg:min-w-[400px]">
           <li>
             <a href="/#about" className="hover:underline hover:text-gray-600">
               About

@@ -1,8 +1,15 @@
-export const experience = [
+interface Experience {
+  company: string;
+  workingPeriod: string;
+  role: string;
+  description: string;
+}
+
+export const experience: Experience[] = [
   {
-    company: "Hectare",
-    workingPeriod: "2022-present",
-    role: "Fullstack Software Engineer",
+    company: 'Hectare',
+    workingPeriod: '2022-present',
+    role: 'Fullstack Software Engineer',
     description: `Following a promotion in December 2022, I took in further
     responsibly within the team. This included bringing forward new
     ideas and executing them to ensure a stable platform as the
@@ -13,9 +20,9 @@ export const experience = [
     simple solutions to complex problems.`,
   },
   {
-    company: "Hectare",
-    workingPeriod: "2021-2022",
-    role: "Fullstack Software Developer",
+    company: 'Hectare',
+    workingPeriod: '2021-2022',
+    role: 'Fullstack Software Developer',
     description: `In order to expand my knowledge, I joined the Argi-Tech SAAS start
       up in September 2021. In this role, I learnt to work at a fast
       pace, delivering high quality features to a green field user base.
@@ -25,9 +32,9 @@ export const experience = [
       on Front end, and MongoDB with Express on the Back end.`,
   },
   {
-    company: "Simplyhealth",
-    workingPeriod: "2020-2021",
-    role: "Junior Software Developer",
+    company: 'Simplyhealth',
+    workingPeriod: '2020-2021',
+    role: 'Junior Software Developer',
     description: `Following the completion of my apprenticeship, I became a Junior
       Software developer. This role entails converting requirements from
       stakeholders around the business into highly functional working
@@ -40,9 +47,9 @@ export const experience = [
       throughout the customers experience with Simplyhealth.`,
   },
   {
-    company: "Simplyhealth",
-    workingPeriod: "2019-2020",
-    role: "Apprentice Software Developer",
+    company: 'Simplyhealth',
+    workingPeriod: '2019-2020',
+    role: 'Apprentice Software Developer',
     description: `I completed my apprenticeship with Firebrand in September 2020,
       following 2 exams (MTA Database Fundamentals, MTHTML5 Microsoft
       Specialist: Programming with HTML5 with Javascript and CSS3) as
@@ -50,9 +57,9 @@ export const experience = [
       work-place.`,
   },
   {
-    company: "Simplyhealth",
-    workingPeriod: "2017-2019",
-    role: "Customer Service Advisor",
+    company: 'Simplyhealth',
+    workingPeriod: '2017-2019',
+    role: 'Customer Service Advisor',
     description: `As a Contact Advisor, I spoke to customers over the phone,
       LiveChat and email to deal with their complex queries. My role was
       to understand their concerns with their product and establish a
