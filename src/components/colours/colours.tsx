@@ -9,7 +9,7 @@ export const Colours = (props: ColoursProps) => {
         {props.colours.map((colour, key) => (
           <div key={key} className="flex flex-col items-center">
             <div
-              className="w-20 h-20 rounded-full m-6 border-transparent shadow-lg"
+              className="w-20 h-20 rounded-full m-6 border shadow-lg"
               style={{ backgroundColor: colour }}
             ></div>
             <p>{colour}</p>

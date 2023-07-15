@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,9 +10,13 @@
 .headline-2 {
     @apply font-bold text-xl md:text-2xl lg:text-5xl py-2 lg:py-8;
 }
+.headline-4 {
+    @apply font-bold text-sm md:text-lg lg:text-2xl;
+}
 
-body {
+body, html {
     @apply text-grey;  
+    font-family: "Montserrat",sans-serif;
     scroll-behavior: smooth;
 }
 h1 {

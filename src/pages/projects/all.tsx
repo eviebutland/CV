@@ -17,7 +17,7 @@ const allProjects = () => {
                 className="w-1/2 rounded-lg"
                 alt={project.name}
               />
-              <p className="my-10 font-bold">{project.name}</p>
+              <h2 className="headline-4">{project.name}</h2>
               <p>{project.detail}</p>
             </Link>
           </li>

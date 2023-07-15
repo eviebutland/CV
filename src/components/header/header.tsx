@@ -1,4 +1,4 @@
-import me from "../../assets/svg/me.svg";
+import me from '../../assets/svg/me.svg';
 
 export const Header = () => {
   const yearsExperience = new Date().getFullYear() - 2019;
@@ -6,11 +6,14 @@ export const Header = () => {
   return (
     <section className="flex flex-col-reverse md:flex-row  md:my-20 md:justify-center items-center">
       <div className="mt-10 md:mt-0 text-center md:text-left">
-        <h1 className=" md:mb-2 lg:mb-10">Hi, I'm Evie</h1>
-        <h1 className="max-w-[700px]">Front-End Software Engineer</h1>
-        <p className="mt-10">
+        <h1>Hi, I'm Evie</h1>
+        <p className="headline-1 max-w-[700px] !p-0">
+          Front-End Software Engineer
+        </p>
+        <p className="mt-10 max-w-[700px] pr-3">
           Over {yearsExperience} years experience working with Front-end
-          technologies
+          technologies. Currently working at an Argi-tech SAAS start-up,
+          bringing data-led innovations for post production supply chains.
         </p>
       </div>
       <img src={me} alt="me" className="w-[150px] md:w-[300px] lg:w-auto" />
