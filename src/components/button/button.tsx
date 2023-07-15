@@ -1,14 +1,15 @@
-import { ReactEventHandler } from 'react';
+import { ReactChild, ReactEventHandler } from 'react';
 
 export type StyleProps = 'full' | 'outline';
 
 interface ButtonProps {
-  text: string;
+  text?: string;
   onClick?: ReactEventHandler;
-  design: StyleProps;
-  location: string;
+  design?: StyleProps;
+  location?: string;
   target?: string;
   priority?: string;
+  children?: ReactChild;
 }
 export const Button = (props: ButtonProps) => {
   const { onClick, text, design, location, target } = props;
@@ -28,7 +29,7 @@ export const Button = (props: ButtonProps) => {
         
       `}
     >
-      {text}
+      {props.children ? <div>{props.children}</div> : text}
     </a>
   );
 };

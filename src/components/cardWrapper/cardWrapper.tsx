@@ -1,20 +1,20 @@
-import { Card } from "../card/card";
-import styles from "./cardWrapper.module.scss";
-import orangeThumnail from "../../assets/images/orange-thumnail.png";
-import hrMentorAppThumbnail from "../../assets/images/mentor-thumbnail.png";
-import inventoryThumbnail from "../../assets/images/inventory.png";
-import movieThumbnail from "../../assets/images/movielib1.png";
-import fitnessThumbnail from "../../assets/images/movielib2.png";
-import p2pThumbnail from "../../assets/images/p2p-thumbnail.png";
-import { projects } from "../../projects/projects";
-import "../../assets/scss/main.scss";
+import { Card } from '../card/card';
+import styles from './cardWrapper.module.scss';
+import orangeThumnail from '../../assets/images/orange-thumnail.png';
+import hrMentorAppThumbnail from '../../assets/images/mentor-thumbnail.png';
+import inventoryThumbnail from '../../assets/images/inventory.png';
+import movieThumbnail from '../../assets/images/movielib1.png';
+import fitnessThumbnail from '../../assets/images/movielib2.png';
+import p2pThumbnail from '../../assets/images/p2p-thumbnail.png';
+import { projects } from '../../pages/projects/projects';
+import '../../assets/scss/main.scss';
 
 export const CardWrapper = () => {
   return (
     <section id="projects" className={styles.container}>
       <h2 className={styles.title}>Projects</h2>
       <ul>
-        <div className={styles.wrap}>
+        {/* <div className={styles.wrap}>
           <li>
             <div className={styles.item}>
               <Card
@@ -98,7 +98,7 @@ export const CardWrapper = () => {
               ></Card>
             </div>
           </li>
-        </div>
+        </div> */}
       </ul>
     </section>
   );

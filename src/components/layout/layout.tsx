@@ -9,7 +9,7 @@ import NotFound from '../../pages/404/notFound';
 import InventoryPlatform from '../../pages/projects/inventory';
 import MovieLibrary from '../../pages/projects/movieLibrary';
 import FitnessApp from '../../pages/projects/fitnessApp';
-
+import AllProjects from '../../pages/projects/all';
 export const Layout = () => {
   return (
     <Router>
@@ -36,6 +36,9 @@ export const Layout = () => {
           </Route>
           <Route exact path="/fitness-app">
             <FitnessApp />
+          </Route>
+          <Route exact path="/all-projects">
+            <AllProjects />
           </Route>
           <Route component={NotFound}></Route>
         </Switch>
