@@ -5,10 +5,7 @@ import { Timeline } from '../../components/timeline/timeline';
 import { Footer } from '../../components/footer/footer';
 import { WorkingExperience } from '../../components/workingExperience/workingExperience';
 import PDF from '../../assets/PDF/Evie_Perren.pdf';
-import upwork from '../../assets/images/upwork.png';
-import peopleperhour from '../../assets/images/peopleperhour.png';
 import fiverr from '../../assets/images/Fiverr-Logo.png';
-import freelancer from '../../assets/images/freelancer.jpeg';
 // import { fetchMediumArtices } from '../../service/medium';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -88,7 +85,7 @@ export const Home = () => {
 
       <div className="bg-primary mt-[50px] lg:mt-[100px] px-[20px] py-12 lg:p-[100px]">
         <div className="max-w-[1250px] m-auto flex-col-reverse lg:flex-row flex justify-between">
-          <div className="">
+          <div>
             <div className="pt-10 lg:pt-0">
               <h2 className="headline-1 text-center md:text-left">Skillset</h2>
               <hr className="border-gray-800 hidden lg:block border-b w-[20%] mt-2" />
@@ -124,22 +121,8 @@ export const Home = () => {
           className="flex space-y-4 py-20 md:space-y-0 md:space-x-5 lg:space-x-10 flex-col md:flex-row md:px-[100px] justify-center items-center md:items-baseline mb-30"
           id="workWithMe"
         >
-          <a href="https://www.upwork.com/en-gb/freelancers/~01a96055abeb6a11f5">
-            <img
-              className="h-8 md:h-12 lg:h-14"
-              src={upwork}
-              alt="upwork logo"
-            />
-          </a>
-
-          <a href="https://www.peopleperhour.com/freelancer/evie-perren-skilled-front-end-software-zaaawzjn">
-            <img
-              className="h-8 md:h-12 lg:h-14"
-              src={peopleperhour}
-              alt="peopleperhour logo"
-            />
-          </a>
-
+          
+          
           <a href="https://www.fiverr.com/evieperren">
             <img
               className="h-8 md:h-12 lg:h-20"
@@ -148,13 +131,7 @@ export const Home = () => {
             />
           </a>
 
-          <a href="https://www.freelancer.com/u/EvieButland">
-            <img
-              className="h-8 md:h-12 lg:h-20"
-              src={freelancer}
-              alt="Freelancer logo"
-            />
-          </a>
+          
         </div>
 
         <WorkingExperience></WorkingExperience>

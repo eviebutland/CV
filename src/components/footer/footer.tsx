@@ -14,31 +14,6 @@ export const Footer = () => {
               Fiverr
             </a>
           </li>
-          <li>
-            <a
-              className="hover:border-b border-black"
-              href="https://www.upwork.com/en-gb/freelancers/~01a96055abeb6a11f5"
-            >
-              Upwork
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:border-b border-black"
-              href="https://www.peopleperhour.com/freelancer/evie-perren-skilled-front-end-software-zaaawzjn"
-            >
-              PeoplePerHour
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="hover:border-b border-black"
-              href="https://www.freelancer.com/u/EvieButland"
-            >
-              Freelancer
-            </a>
-          </li>
         </ul>
         <ul className="justify-end md:justify-start mb-3 p-0 flex items-center flex-wrap space-x-3">
           <li>
