@@ -54,14 +54,14 @@ export const Navigation = () => {
               About
             </a>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="all-projects"
               className="hover:underline hover:text-gray-600"
             >
               Projects
             </Link>
-          </li>
+          </li> */}
           <li>
             <a
               href="/#working-experience"
