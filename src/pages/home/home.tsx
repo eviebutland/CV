@@ -1,23 +1,23 @@
-import { Fragment } from 'react';
-import { Header } from '../../components/header/header';
-import { Timeline } from '../../components/timeline/timeline';
+import { Fragment } from "react";
+import { Header } from "../../components/header/header";
+import { Timeline } from "../../components/timeline/timeline";
 
-import { Footer } from '../../components/footer/footer';
-import { WorkingExperience } from '../../components/workingExperience/workingExperience';
-import PDF from '../../assets/PDF/CV.pdf';
-import fiverr from '../../assets/images/Fiverr-Logo.png';
+import { Footer } from "../../components/footer/footer";
+import { WorkingExperience } from "../../components/workingExperience/workingExperience";
+import PDF from "../../assets/PDF/CV.pdf";
+import fiverr from "../../assets/images/Fiverr-Logo.png";
 // import { fetchMediumArtices } from '../../service/medium';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedin,
   faMedium,
-} from '@fortawesome/free-brands-svg-icons';
-import { icons } from './icons';
-import { faFilePdf } from '@fortawesome/free-regular-svg-icons';
-import { IconGrid } from '../../components/IconGrid';
+} from "@fortawesome/free-brands-svg-icons";
+import { icons } from "./icons";
+import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
+import { IconGrid } from "../../components/IconGrid";
 
-import { Tooltip } from '../../components/tooltip/tooltip';
+import { Tooltip } from "../../components/tooltip/tooltip";
 export const Home = () => {
   // const [articles, setArticles] = useState([]);
 
@@ -93,10 +93,12 @@ export const Home = () => {
             <p className=" lg:pb-0 lg:max-w-[80%] mt-10">
               As a self-taught developer, I built my knowledge in my free-time
               on tech stacks that interest me and have been used within my
-              roles.
+              roles. Primarily working with React, Vue, Inertia and Laravel, I
+              am also a key developer within our org to develop a React Native
+              app, used by over 300 restaurants.
               <br />
               <br />I continue to learn everyday & enjoy staying up to date with
-              the latest tech. I also write about these on{' '}
+              the latest tech. I also write about these on{" "}
               <a
                 href="https://medium.com/@evie.butland"
                 target="_blank"
@@ -121,8 +123,6 @@ export const Home = () => {
           className="flex space-y-4 py-20 md:space-y-0 md:space-x-5 lg:space-x-10 flex-col md:flex-row md:px-[100px] justify-center items-center md:items-baseline mb-30"
           id="workWithMe"
         >
-          
-          
           <a href="https://www.fiverr.com/evieperren">
             <img
               className="h-8 md:h-12 lg:h-20"
@@ -130,8 +130,6 @@ export const Home = () => {
               alt="fiverr logo"
             />
           </a>
-
-          
         </div>
 
         <WorkingExperience></WorkingExperience>

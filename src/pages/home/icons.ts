@@ -63,9 +63,9 @@ export const icons: Array<{
     url: "https://nuxt.com/",
   },
   {
-    label: "Prismic",
+    label: "Laravel",
     value: faFolder,
-    url: "https://prismic.io/",
+    url: "https://laravel.com/",
   },
   {
     label: "Figma",

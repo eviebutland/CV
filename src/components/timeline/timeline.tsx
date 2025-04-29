@@ -29,9 +29,9 @@ export const Timeline = () => {
         <br />
 
         <p>
-          I have since joined an Argi-tech SAAS start-up, taking on more complex
-          tasks and working closely with stakeholders to deliver a high quality
-          product.
+          I enjoy the challenge of building a product from the ground up, in a
+          fast paced startup environment. It has allowed me to grow as a product
+          developer, wearing multiple hats at once.
         </p>
         <br />
 
