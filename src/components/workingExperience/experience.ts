@@ -64,14 +64,4 @@ export const experience: Experience[] = [
       well as meeting a list of criteria on projects within my
       work-place.`,
   },
-  {
-    company: "Simplyhealth",
-    workingPeriod: "2017-2019",
-    role: "Customer Service Advisor",
-    description: `As a Contact Advisor, I spoke to customers over the phone,
-      LiveChat and email to deal with their complex queries. My role was
-      to understand their concerns with their product and establish a
-      satisfactory outcome. This required organisation, working to
-      resolve issues swiftly and in alignment with our regulations`,
-  },
 ];

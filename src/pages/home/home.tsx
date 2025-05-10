@@ -4,9 +4,8 @@ import { Timeline } from "../../components/timeline/timeline";
 
 import { Footer } from "../../components/footer/footer";
 import { WorkingExperience } from "../../components/workingExperience/workingExperience";
-import PDF from "../../assets/PDF/CV.pdf";
+import PDF from "../../assets/PDF/Evie_Perren_cv.pdf";
 import fiverr from "../../assets/images/Fiverr-Logo.png";
-// import { fetchMediumArtices } from '../../service/medium';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
