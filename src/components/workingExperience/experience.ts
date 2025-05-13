@@ -12,32 +12,37 @@ export const experience: Experience[] = [
     company: "Guestwise",
     workingPeriod: "2025-present",
     role: "Frontend Software Developer",
-    description: `I joined Guestwise in January 2025, looking for a fresh opportunity to grow within a new industry. It has allowed me to develop my skills as a product-minded developer, as well as working with a new tech stack (PHP, Laravel, Inertia). Despite my focus being prodominently on the frontend, I have been able to get involved in the full stack of the application, and have been able to build features from the ground up. My most recent projects include a new dashboard that combines metrics from across our 4 products into a clean and simple interface, with a focus on user experience that is easy to understand and navigate.`,
+    description: `I joined Guestwise in January 2025, looking for a fresh opportunity to grow
+      within a new industry. It has allowed me to harness my skills as a product-minded developer, as well dive into with a new tech stack (PHP, Laravel, Inertia).
+
+      Being in a fast paced startup, my role is to wear many hats. This has given me the flexibility to learn new tools, suggest different methods for working (i.e using story points for more effective estimates) to grow more effective as a team, a company, and as a developer. 
+      
+      Changing industries has given me the chance to have greater reach to customers & develop tools through code that have a real impact on their businesses.
+
+      I primarily work on developing a React Native app, used in over 300
+      restaurants across the UK. My focus is also on our portal (written in PHP,
+      Laravel, Inertia and ReactJS), displaying key metrics to help inform
+      marketers on their next strategy.`,
   },
   {
     company: "Hectare",
     workingPeriod: "2022-2025",
     role: "Fullstack Software Engineer",
-    description: `Following a promotion in December 2022, I took in further
-    responsibly within the team. This included bringing forward new
-    ideas and executing them to ensure a stable platform as the
-    product usage continues to grow. I have built a strong
-    relationship with stake holders with the company, collaborating to
-    solve complex issues our users face on a regular basis. This in
-    turn has helped me build knowledge on problem solving and creating
-    simple solutions to complex problems.`,
+    description: `Following a promotion in December 2022, I took in further responsibly within the team. This included bringing forward new ideas and executing them to ensure a stable platform as the product usage continues to grow. 
+    
+    An example of this was ‘Storage locations’ that allows farmers to see what they have in each store, the capacity & when movements are occurring - which is normally filled out in multiple spreadsheets. I have built a strong relationship with stake holders with the company, collaborating to solve complex issues our users face on a regular basis. 
+    
+    This in turn has helped me build knowledge on problem solving and creating simple solutions with code (primarily Vuejs with Typescript connecting to OpenAPI backend). 
+    
+    In this time, I also relocated to Australia for 4 months, effectively communicating & working across timezones with my team back in the UK.`,
   },
   {
     company: "Hectare",
     workingPeriod: "2021-2022",
     role: "Fullstack Software Developer",
-    description: `In order to expand my knowledge, I joined the Argi-Tech SAAS start
-      up in September 2021. In this role, I learnt to work at a fast
-      pace, delivering high quality features to a green field user base.
-      This required strong communication and prioritisation skills to
-      achieve the best product within strict and short timeframes.
-      Within this role, I transitioned my knowledge to work with NuxtJS
-      on Front end, and MongoDB with Express on the Back end.`,
+    description: `Eager expand my knowledge, I joined the Argi-Tech SAAS start up in September 2021. In this role, I learnt to work at a fast pace, delivering high quality features to a green field user base. This required strong communication and prioritisation skills to achieve the best product within strict and short timeframes. Within this role, I transitioned my knowledge to work with NuxtJS on Front end, and MongoDB with Express on the Back end. 
+    
+    During this role, I found I deeply enjoy a fast paced environment that allows for ambitious thinking & exploring new ideas/tools. I worked along side an incredibly talented group of engineers who encouraged my out-the-box thinking & distilled best practices that I continue to use in my career.`,
   },
   {
     company: "Simplyhealth",

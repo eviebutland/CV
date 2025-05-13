@@ -11,9 +11,11 @@ export const Header = () => {
           Front-End Software Engineer
         </p>
         <p className="mt-10 max-w-[700px] pr-3">
-          Over {yearsExperience} years experience working with Front-end
-          technologies. Currently working at an Hospitality Marketing SAAS
-          start-up, building a platform to help restaurants grow their business.
+          A self-taught developer with a passion for problem solving & over{" "}
+          {yearsExperience} years experience in Front End Development, primarily
+          working in building unique SASS products for early stage startups.
+          Currently working at an Hospitality Marketing SAAS start-up, building
+          a platform to help restaurants grow their business.
         </p>
       </div>
       <img src={me} alt="me" className="w-[150px] md:w-[300px] lg:w-auto" />

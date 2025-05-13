@@ -36,6 +36,14 @@ export const Timeline = () => {
         <br />
 
         <p>
+          In 2023, I moved my life to Australia and was fortunate enough to
+          remain with Hectare, based in the UK. This opportunity gave me the
+          opportunity to see the world as well as build strong communication
+          skills with my team. This was a pivotal time for my personal
+          development & growth as a developer.
+        </p>
+        <br />
+        <p>
           With {yearsExperience} years of working experience, I have learnt
           build maintainable features to complex challenges to a high quality,
           following best practices and delivering within the required deadline.
