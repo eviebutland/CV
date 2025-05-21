@@ -4,7 +4,7 @@ import { Timeline } from "../../components/timeline/timeline";
 
 import { Footer } from "../../components/footer/footer";
 import { WorkingExperience } from "../../components/workingExperience/workingExperience";
-import PDF from "../../assets/PDF/Evie_Perren_cv.pdf";
+import PDF from "../../assets/PDF/Evie Perren CV.pdf";
 import fiverr from "../../assets/images/Fiverr-Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
