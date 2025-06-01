@@ -1,18 +1,15 @@
 import {
-  faCloud,
   faCodeBranch,
   faMobileAlt,
   faMountain,
   faN,
   faServer,
   faT,
-  faUniversalAccess,
   faVialCircleCheck,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
   IconDefinition,
-  faCss3Alt,
   faFigma,
   faJsSquare,
   faReact,

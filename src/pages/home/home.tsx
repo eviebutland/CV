@@ -5,7 +5,6 @@ import { Timeline } from "../../components/timeline/timeline";
 import { Footer } from "../../components/footer/footer";
 import { WorkingExperience } from "../../components/workingExperience/workingExperience";
 import PDF from "../../assets/PDF/Evie-Perren-CV.pdf";
-import fiverr from "../../assets/images/Fiverr-Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -15,19 +14,9 @@ import {
 import { icons } from "./icons";
 import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
 import { IconGrid } from "../../components/IconGrid";
-
 import { Tooltip } from "../../components/tooltip/tooltip";
+
 export const Home = () => {
-  // const [articles, setArticles] = useState([]);
-
-  // async function onLoad() {
-  //   if (articles.length < 1) {
-  //     const fetched = await fetchMediumArtices();
-  //     setArticles(fetched);
-  //   }
-  // }
-
-  // onLoad();
   return (
     <Fragment>
       <div className="mx-5 md:mx-15 lg:mx-20">
