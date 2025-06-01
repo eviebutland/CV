@@ -4,7 +4,7 @@ import { Timeline } from "../../components/timeline/timeline";
 
 import { Footer } from "../../components/footer/footer";
 import { WorkingExperience } from "../../components/workingExperience/workingExperience";
-import PDF from "../../assets/PDF/Evie Perren CV.pdf";
+import PDF from "../../assets/PDF/Evie-Perren-CV.pdf";
 import fiverr from "../../assets/images/Fiverr-Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -91,10 +91,10 @@ export const Home = () => {
             </div>
             <p className=" lg:pb-0 lg:max-w-[80%] mt-10">
               As a self-taught developer, I built my knowledge in my free-time
-              on tech stacks that interest me and have been used within my
-              roles. Primarily working with React, Vue, Inertia and Laravel, I
-              am also a key developer within our org to develop a React Native
-              app, used by over 300 restaurants.
+              on tech stacks that excite me and have been used within my roles.
+              Primarily working with React, Vue, Inertia and Laravel, I am also
+              a key developer within our org to develop a React Native app, used
+              by over 350 restaurants.
               <br />
               <br />I continue to learn everyday & enjoy staying up to date with
               the latest tech. I also write about these on{" "}
@@ -117,19 +117,6 @@ export const Home = () => {
 
       <section className="max-w-[1250px] md:mx-[100px] lg:mx-auto  mb-10 md:mb-30">
         <Timeline />
-
-        <div
-          className="flex space-y-4 py-20 md:space-y-0 md:space-x-5 lg:space-x-10 flex-col md:flex-row md:px-[100px] justify-center items-center md:items-baseline mb-30"
-          id="workWithMe"
-        >
-          <a href="https://www.fiverr.com/evieperren">
-            <img
-              className="h-8 md:h-12 lg:h-20"
-              src={fiverr}
-              alt="fiverr logo"
-            />
-          </a>
-        </div>
 
         <WorkingExperience></WorkingExperience>
       </section>

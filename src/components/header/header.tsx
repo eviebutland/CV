@@ -11,11 +11,20 @@ export const Header = () => {
           Front-End Software Engineer
         </p>
         <p className="mt-10 max-w-[700px] pr-3">
-          A self-taught developer with a passion for problem solving & over{" "}
-          {yearsExperience} years experience in Front End Development, primarily
-          working in building unique SASS products for early stage startups.
-          Currently working at an Hospitality Marketing SAAS start-up, building
-          a platform to help restaurants grow their business.
+          A results-oriented Front End Developer with over {yearsExperience}{" "}
+          years of experience, specialising in building unique SaaS products for
+          early-stage startups.
+          <br />
+          <br />
+          I'm a product-minded problem-solver, consistently delivering customer
+          focused solutions that has led to an increase of usage and positive
+          interactions with our software - most recently by reducing load time
+          on our main dashboard from 6 seconds to under 2 seconds.
+          <br />
+          <br />
+          I'm eager to join a dynamic team where I can drive personal and
+          professional growth, offering the freedom to contribute fresh ideas
+          and making a significant contribution within a collaborative team.
         </p>
       </div>
       <img src={me} alt="me" className="w-[150px] md:w-[300px] lg:w-auto" />

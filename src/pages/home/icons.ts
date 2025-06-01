@@ -1,10 +1,13 @@
 import {
   faCloud,
+  faCodeBranch,
   faMobileAlt,
   faMountain,
+  faN,
   faServer,
   faT,
   faUniversalAccess,
+  faVialCircleCheck,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -23,6 +26,11 @@ export const icons: Array<{
   url: string;
 }> = [
   {
+    label: "Javascript",
+    value: faJsSquare,
+    url: "https://www.javascript.com/",
+  },
+  {
     label: "React",
     value: faReact,
     url: "https://react.dev/",
@@ -38,29 +46,25 @@ export const icons: Array<{
     url: "https://www.typescriptlang.org/",
   },
   {
-    label: "CSS",
-    value: faCss3Alt,
-    url: "https://www.w3schools.com/css/",
+    label: "Vitest",
+    value: faVialCircleCheck,
+    url: "https://vitest.dev/",
   },
+
   {
-    label: "Express JS",
-    value: faJsSquare,
-    url: "https://expressjs.com/",
-  },
-  {
-    label: "Mongoose",
-    value: faServer,
-    url: "https://www.freecodecamp.org/news/introduction-to-mongoose-for-mongodb-d2a7aa593c57/",
-  },
-  {
-    label: "MongoDB",
-    value: faCloud,
-    url: "https://www.mongodb.com/",
+    label: "Next JS",
+    value: faN,
+    url: "https://nextjs.org/",
   },
   {
     label: "Nuxt JS",
     value: faMountain,
     url: "https://nuxt.com/",
+  },
+  {
+    label: "Node JS",
+    value: faServer,
+    url: "https://nodejs.org/en",
   },
   {
     label: "Laravel",
@@ -73,9 +77,9 @@ export const icons: Array<{
     url: "https://www.figma.com/",
   },
   {
-    label: "Responsive Design",
-    value: faUniversalAccess,
-    url: "https://www.w3schools.com/html/html_responsive.asp",
+    label: "Git",
+    value: faCodeBranch,
+    url: "https://git-scm.com/",
   },
   {
     label: "React Native",
