@@ -73,17 +73,25 @@ export const Home = () => {
 
       <div className="bg-primary mt-[50px] lg:mt-[100px] px-[20px] py-12 lg:p-[100px]">
         <div className="max-w-[1250px] m-auto flex-col-reverse lg:flex-row flex justify-between">
-          <div>
-            <div className="pt-10 lg:pt-0">
+          <div className="flex-1">
+            <div className="pt-5 md:pt-0 lg:pt-0">
               <h2 className="headline-1 text-center md:text-left">Skillset</h2>
               <hr className="border-gray-800 hidden lg:block border-b w-[20%] mt-2" />
             </div>
-            <p className=" lg:pb-0 lg:max-w-[80%] mt-10">
-              As a self-taught developer, I built my knowledge in my free-time
-              on tech stacks that excite me and have been used within my roles.
-              Primarily working with React, Vue, Inertia and Laravel, I am also
-              a key developer within our org to develop a React Native app, used
-              by over 350 restaurants.
+            <p className="lg:pb-0 lg:max-w-[80%] mt-10">
+              I am passionate about understanding customer problems and
+              continuously learning new technologies to deliver effective
+              solutions. Being self-taught, my passion for coding is
+              intrinsically linked to continuous learning. I'm dedicated to
+              mastering new technologies and evolving my skills to stay at the
+              forefront of development and consistently build impactful
+              products.
+              <br />
+              <br />I continue to build my knowledge in my free-time on tech
+              stacks that excite me and have been used within my roles.
+              Primarily working with <b>React, Vue, Inertia and Laravel</b>, I
+              am also a key developer within our org to develop a React Native
+              app, used by <b>over 350 restaurants</b>.
               <br />
               <br />I continue to learn everyday & enjoy staying up to date with
               the latest tech. I also write about these on{" "}
@@ -98,7 +106,7 @@ export const Home = () => {
               .
             </p>
           </div>
-          <div className="w-full flex justify-center">
+          <div className="w-full flex justify-center flex-1">
             <IconGrid icons={icons} />
           </div>
         </div>

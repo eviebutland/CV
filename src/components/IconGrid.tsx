@@ -1,6 +1,6 @@
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Tooltip } from './tooltip/tooltip';
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Tooltip } from "./tooltip/tooltip";
 
 interface Props {
   icons: Array<{
@@ -12,7 +12,8 @@ interface Props {
 
 export const IconGrid = (props: Props) => {
   return (
-    <div className="grid grid-cols-4 gap-6 xl:gap-12 ">
+    // /grid grid-cols-4 gap-6 xl:gap-12
+    <div className="flex flex-wrap gap-6 xl:gap-12 justify-center">
       {props.icons.map((icon, index) => (
         <Tooltip label={icon.label} key={`tool-tip-${index}`}>
           <a href={icon.url} target="_blank" rel="noreferrer">

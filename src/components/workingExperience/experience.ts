@@ -12,7 +12,7 @@ export const experience: Experience[] = [
     company: "Guestwise",
     workingPeriod: "2025-present",
     role: "Frontend Software Developer",
-    description: `Working as Front End Software Developer within a fast pace start up, I’m required to wear many hats. Entering a new industry has allowed me to harness my skills as a product-minded developer, having a greater reach to new customers with a unique set of problems. 
+    description: `Working as Front End Software Developer within a fast pace start up, I’m required to wear many hats. Entering a new industry (Hospitality Marketing) has allowed me to harness my skills as a product-minded developer, having a greater reach to new customers with a unique set of problems. 
 
 My daily work focuses on surfacing key metrics that our customers use to inform and drive their marketing strategies. By ensuring accuracy of metrics, I am able to build trust with our customers and increase stickiness with our product - which built in PHP and Laravel.
 
