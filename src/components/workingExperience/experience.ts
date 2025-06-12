@@ -21,7 +21,9 @@ inform and drive their marketing strategies. By ensuring accuracy of
 metrics, I am able to build trust with our customers and increase stickiness
 with our product - which built in PHP and Laravel.
 I also lead on a React Native app used in over 350 restaurants across the
-UK. I am currently focusing on improving our release process to shorten the
+UK.
+
+I am currently focusing on improving our release process to shorten the
 delivery loop from 3-5 days to 1hr by using OTA updates via Expo.
 Through my code & custom built activations, our customers are able to
 make strategic marketing decisions that has unlocked over 24%
