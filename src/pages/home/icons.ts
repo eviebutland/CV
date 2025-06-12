@@ -33,6 +33,11 @@ export const icons: Array<{
     url: "https://react.dev/",
   },
   {
+    label: "React Native",
+    value: faMobileAlt,
+    url: "https://reactnative.dev/",
+  },
+  {
     label: "Vue",
     value: faVuejs,
     url: "https://vuejs.org/",
@@ -77,10 +82,5 @@ export const icons: Array<{
     label: "Git",
     value: faCodeBranch,
     url: "https://git-scm.com/",
-  },
-  {
-    label: "React Native",
-    value: faMobileAlt,
-    url: "https://reactnative.dev/",
   },
 ];

@@ -4,7 +4,8 @@ import { Timeline } from "../../components/timeline/timeline";
 
 import { Footer } from "../../components/footer/footer";
 import { WorkingExperience } from "../../components/workingExperience/workingExperience";
-import PDF from "../../assets/PDF/Evie-Perren-CV.pdf";
+// import PDF from "../../assets/PDF/Evie-Perren-CV.pdf";
+import PDF from "../../assets/PDF/Evie Perren - 12:06:25.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -90,8 +91,8 @@ export const Home = () => {
               <br />I continue to build my knowledge in my free-time on tech
               stacks that excite me and have been used within my roles.
               Primarily working with <b>React, Vue, Inertia and Laravel</b>, I
-              am also a key developer within our org to develop a React Native
-              app, used by <b>over 350 restaurants</b>.
+              am also a key developer within our org to develop a
+              <b> React Native app, used by over 350 restaurants</b>.
               <br />
               <br />I continue to learn everyday & enjoy staying up to date with
               the latest tech. I also write about these on{" "}
