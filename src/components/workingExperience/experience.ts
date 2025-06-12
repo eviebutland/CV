@@ -12,13 +12,21 @@ export const experience: Experience[] = [
     company: "Guestwise",
     workingPeriod: "2025-present",
     role: "Frontend Software Developer",
-    description: `Working as Front End Software Developer within a fast pace start up, I’m required to wear many hats. Entering a new industry (Hospitality Marketing) has allowed me to harness my skills as a product-minded developer, having a greater reach to new customers with a unique set of problems. 
-
-My daily work focuses on surfacing key metrics that our customers use to inform and drive their marketing strategies. By ensuring accuracy of metrics, I am able to build trust with our customers and increase stickiness with our product - which built in PHP and Laravel.
-
-I also work closely on a React Native app used in over 350 restaurants across the UK. I am currently focusing on improving our release process to shorten the delivery loop from 3-5 days to 1hr by using OTA updates via Expo.
-
-Through my code & custom built activations, our customers are able to make strategic marketing decisions that has unlocked over 24% incremental conversions, leading to increased bookings and additional revenue for their brands.
+    description: `Working as Front End Software Developer within a fast pace start up, I’m
+required to wear many hats. Entering a new industry (hospitality marketing)
+has allowed me to harness my skills as a product-minded developer, having
+a greater reach to new customers with a unique set of problems.
+My daily work focuses on surfacing key metrics that our customers use to
+inform and drive their marketing strategies. By ensuring accuracy of
+metrics, I am able to build trust with our customers and increase stickiness
+with our product - which built in PHP and Laravel.
+I also lead on a React Native app used in over 350 restaurants across the
+UK. I am currently focusing on improving our release process to shorten the
+delivery loop from 3-5 days to 1hr by using OTA updates via Expo.
+Through my code & custom built activations, our customers are able to
+make strategic marketing decisions that has unlocked over 24%
+incremental conversions, leading to increased bookings and additional
+revenue for their brands.
 `,
   },
   {
